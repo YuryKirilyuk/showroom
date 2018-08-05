@@ -1,0 +1,18 @@
+.btn {
+  @include hover($red);
+  border: none;
+  color: #fff;
+  font-family: $custom-font-family;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+  }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>A5692C7C-ABAC-4C2D-8474-2978365C6163</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="255" height="420"></rect>
+        <filter x="-7.5%" y="-4.0%" width="114.9%" height="109.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M14.6666667,4.66666667 L14,4.66666667 L14,3.33333333 L12.6666667,3.33333333 L12.6666667,4.66666667 L7.33333333,4.66666667 L7.33333333,3.33333333 L6,3.33333333 L6,4.66666667 L5.33333333,4.66666667 C4.59333333,4.66666667 4.00666667,5.26666667 4.00666667,6 L4,15.3333333 C4,16.0666667 4.59333333,16.6666667 5.33333333,16.6666667 L14.6666667,16.6666667 C15.4,16.6666667 16,16.0666667 16,15.3333333 L16,6 C16,5.26666667 15.4,4.66666667 14.6666667,4.66666667 L14.6666667,4.66666667 Z M14.6666667,15.3333333 L5.33333333,15.3333333 L5.33333333,8 L14.6666667,8 L14.6666667,15.3333333 L14.6666667,15.3333333 Z M6.66666667,9.33333333 L10,9.33333333 L10,12.6666667 L6.66666667,12.6666667 L6.66666667,9.33333333 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="occasions_1440" transform="translate(-1044.000000, -783.000000)">
+            <g id="events" transform="translate(165.000000, 400.000000)">
+                <g id="4" transform="translate(855.000000, 0.000000)">
+                    <g id="News-Card-Copy-3">
+                        <g id="placeholder">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                    <g id="3.-Icons/ic_today" transform="translate(20.000000, 380.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Icon"></g>
+                        <g id="5.-Colors/Gray-85" mask="url(#mask-4)" fill="#D8D8D8" fill-rule="evenodd">
+                            <g transform="translate(1.333333, 1.333333)" id="Gray-85">
+                                <rect x="0" y="0" width="17" height="17"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

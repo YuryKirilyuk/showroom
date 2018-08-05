@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>B210EB63-4B78-4E56-B9A6-C3F57D0C4BDA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header_1440_new" transform="translate(-1200.000000, -31.000000)">
+            <g>
+                <rect id="placeholder" x="0" y="0" width="1440" height="91" rx="6"></rect>
+                <g id="content" transform="translate(150.000000, 0.000000)" fill="#FFFFFF">
+                    <g id="menu" transform="translate(615.000000, 0.000000)">
+                        <path d="M450,31 C441.72,31 435,37.72 435,46 C435,54.28 441.72,61 450,61 C458.28,61 465,54.28 465,46 C465,37.72 458.28,31 450,31 L450,31 Z M450,35.5 C452.49,35.5 454.5,37.51 454.5,40 C454.5,42.49 452.49,44.5 450,44.5 C447.51,44.5 445.5,42.49 445.5,40 C445.5,37.51 447.51,35.5 450,35.5 L450,35.5 Z M450,56.8 C446.25,56.8 442.935,54.88 441,51.97 C441.045,48.985 447,47.35 450,47.35 C452.985,47.35 458.955,48.985 459,51.97 C457.065,54.88 453.75,56.8 450,56.8 L450,56.8 Z" id="Icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

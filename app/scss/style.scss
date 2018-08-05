@@ -1,0 +1,30 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import "vendor/bootstrap";
+@import "vendor/bootsnav";
+@import "vendor/animate";
+@import "vendor/slick";
+//@import "vendor/jquery.formstyler";
+//@import "vendor/fancybox";
+//@import "vendor/mCustomScrollbar";
+
+//@import "base/reset";
+@import "base/fonts";
+
+
+//@import "layout/grid";
+@import "layout/common";
+@import "layout/animation";
+@import "layout/content";
+@import "layout/partials";
+
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/btn";
+@import "partials/nav";
+@import "partials/hero-slider-section";
+@import "partials/occasion-section";
+@import "partials/how-it-works-section";
+@import "partials/contact-section";
