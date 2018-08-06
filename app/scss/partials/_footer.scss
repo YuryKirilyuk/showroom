@@ -14,8 +14,11 @@ footer{
 		}
 	}
 	.logo {
-		display: inline-block;
 		margin-bottom: 1.5rem;
+		margin-top: -.2rem;
+		@media screen and (max-width: 992px) {
+			display: inline-block;
+		}
 		@media screen and (max-width: 374px) {
 			margin-bottom: 0;
 			flex-shrink: 0;
@@ -28,6 +31,18 @@ footer{
 	@media screen and (max-width: 991px) {
 		padding-bottom: 1rem;
 	}
+	@media screen and (min-width: 1024px) {
+		.col-md-4 {
+			width: 36.5%;
+		}
+		.col-md-2 {
+			width: 12.5%;
+		}
+		.col-md-3 {
+			width: 18%;
+		}
+	}
+
 	.col-xs-6 {
 		float: none;
 		display: inline-block;

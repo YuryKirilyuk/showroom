@@ -4930,9 +4930,9 @@ h3 { font-size: 2.4rem; line-height: 2.9rem; color: #000; font-family: "Vollkorn
 
 .hero-image { background-position: center; background-size: cover; height: 500px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
-.page-title { color: #fff; font-family: "Vollkorn", serif; font-size: 4.2rem; font-weight: 700; text-align: center; }
+.page-title { color: #fff; font-family: "Vollkorn", serif; font-size: 4.2rem; font-weight: 700; line-height: 5rem; margin-bottom: 2.5rem; text-align: center; }
 
-.subtitle { color: #fff; font-size: 2.4rem; line-height: 3rem; text-align: center; }
+.subtitle { color: #fff; font-size: 2rem; line-height: 3rem; margin: auto; max-width: 76rem; text-align: center; }
 
 .section-title { font-family: "Vollkorn", serif; font-size: 3rem; font-weight: 600; margin-bottom: 3.5rem; text-align: center; }
 
@@ -4944,7 +4944,7 @@ h3 { font-size: 2.4rem; line-height: 2.9rem; color: #000; font-family: "Vollkorn
 
 @media screen and (max-width: 1023px) { .logo .logo-display { display: none; } }
 
-@media screen and (max-width: 375px) { .logo { width: 9rem; } }
+@media screen and (max-width: 375px) { .logo { width: 90px; } }
 
 nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-display { display: block !important; }
 
@@ -4966,13 +4966,19 @@ footer a { display: inline-block; padding: 3px 0; }
 
 footer a:hover { color: #fff; }
 
-footer .logo { display: inline-block; margin-bottom: 1.5rem; }
+footer .logo { margin-bottom: 1.5rem; margin-top: -.2rem; }
+
+@media screen and (max-width: 992px) { footer .logo { display: inline-block; } }
 
 @media screen and (max-width: 374px) { footer .logo { margin-bottom: 0; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; } }
 
 .footer-main { padding-bottom: 3rem; }
 
 @media screen and (max-width: 991px) { .footer-main { padding-bottom: 1rem; } }
+
+@media screen and (min-width: 1024px) { .footer-main .col-md-4 { width: 36.5%; }
+  .footer-main .col-md-2 { width: 12.5%; }
+  .footer-main .col-md-3 { width: 18%; } }
 
 .footer-main .col-xs-6 { float: none; display: inline-block; margin: 0 -3px; vertical-align: top; }
 
@@ -5022,17 +5028,23 @@ nav.navbar.bootsnav.navbar-fixed { height: 9rem; top: 0; }
 
 @media (max-width: 375px) { nav.navbar.bootsnav.navbar-fixed { height: 7.2rem; } }
 
-nav.navbar.bootsnav ul.nav > li > a { color: #9d9d9d; font-size: 1.4rem; padding-top: 29px; padding-bottom: 29px; text-transform: none; }
+nav.navbar.bootsnav ul.nav > li > a { color: #9d9d9d; font-family: "Open Sans", sans-serif; font-size: 1.4rem; font-weight: 600; padding: 29px 25px; text-transform: none; }
 
-.login { float: right; color: #9d9d9d; font-size: 14px; margin: .5rem 0 0 3rem; padding-left: 2rem; position: relative; }
+nav.navbar.bootsnav ul.nav > li > a:hover { color: #e12c46 !important; }
+
+nav.navbar.bootsnav ul.nav > li.active > a { color: #e12c46 !important; }
+
+.login { float: right; color: #9d9d9d; font-size: 14px; margin: .5rem 0 0 1.7rem; padding-left: 2rem; position: relative; }
 
 .login:before { content: ''; height: 2rem; border-left: 1px solid #9d9d9d; position: absolute; bottom: 0; top: 0; left: 0; margin: auto; }
 
 @media (max-width: 992px) { .login:before { content: none; } }
 
-.login .fa { font-size: 2.5rem; margin-right: 1.5rem; }
+.login .fa { font-size: 3rem; margin-right: 1.5rem; }
 
-.login a { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 29px 15px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.login a { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 29px 15px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-weight: 600; }
+
+.login a:hover { color: #e12c46 !important; }
 
 .navbar-transparent .login a { color: #fff; }
 
@@ -5062,9 +5074,11 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .hero-slider .container { left: 0; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
-@media screen and (max-width: 1024px) { .hero-slider .container { top: 35%; } }
+@media screen and (max-width: 1024px) { .hero-slider .container { top: 40%; } }
 
-.hero-slider .slick-slide img { min-height: 500px; -o-object-fit: cover; object-fit: cover; }
+.hero-slider .slick-slide img { min-height: 600px; -o-object-fit: cover; object-fit: cover; }
+
+@media screen and (max-width: 425px) { .hero-slider .slick-slide img { min-height: 570px; } }
 
 .hero-slider .slick-dots { bottom: 14rem; left: 50%; list-style: none; margin: 0; padding: 0; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
@@ -5076,7 +5090,7 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .occasion-section { margin-top: -10rem; padding-bottom: 6rem; }
 
-@media screen and (max-width: 374px) { .occasion-section .col-xs-6 { width: 100%; } }
+@media screen and (max-width: 374px) { .occasion-section .col-xs-6 { padding-right: 1rem; padding-left: 1rem; } }
 
 .occasion-item { background-color: #fff; box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05); margin-bottom: 3rem; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
@@ -5091,6 +5105,8 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 .occasion-item .occasion-info .fa { color: #D7D7D7; margin-right: 1rem; }
 
 .occasion-item .occasion-title { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.7))); background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)); bottom: 0; color: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Roboto", sans-serif; font-size: 1.8rem; font-weight: 500; left: 0; line-height: 1.5; padding: 2rem; position: absolute; right: 0; top: 0; text-shadow: 0 0 4px rgba(0, 0, 0, 0.3); }
+
+@media screen and (max-width: 425px) { .occasion-item .occasion-title { font-size: 1.4rem; line-height: 2rem; padding: 1rem; } }
 
 .occasion-item .occasion-place { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 

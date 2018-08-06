@@ -26,7 +26,9 @@ nav.navbar.bootsnav.navbar-transparent.white {
   @media (max-width: 375px) {
     height: $headerHeightMobile;
   }
-}
+
+}//nav.navbar.bootsnav.navbar-transparent.white
+
 nav.navbar.bootsnav.navbar-fixed {
   height: $headerHeight;
   top: 0;
@@ -35,20 +37,28 @@ nav.navbar.bootsnav.navbar-fixed {
   }
 }
 
-nav.navbar.bootsnav ul.nav > li > a {
-  color: #9d9d9d;
-  font-size: 1.4rem;
-  padding-top: 29px;
-  padding-bottom: 29px;
-  text-transform: none;
-
+nav.navbar.bootsnav ul.nav > li {
+  > a {
+    color: #9d9d9d;
+    font-family: $base-font-family;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 29px 25px;
+    text-transform: none;
+    &:hover {
+      color: #e12c46 !important;
+    }
+  }//a
+  &.active > a {
+    color: #e12c46 !important;
+  }
 }
 
 .login {
   float: right;
   color: #9d9d9d;
   font-size: 14px;
-  margin: .5rem 0 0 3rem;
+  margin: .5rem 0 0 1.7rem;
   padding-left: 2rem;
   position: relative;
   &:before {
@@ -65,7 +75,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     &:before {content: none;}
   }
   .fa {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-right: 1.5rem;
   }
   a {
@@ -73,6 +83,10 @@ nav.navbar.bootsnav ul.nav > li > a {
     padding: 29px 15px;
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
+    &:hover {
+      color: #e12c46 !important;
+    }
     .navbar-transparent & {
       color: #fff;
     }

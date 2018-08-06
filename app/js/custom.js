@@ -8,12 +8,13 @@ $(function(){
 
     $('.main-slider').slick({
         dots: true,
-        infinite: false,
+        //infinite: false,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: false,
         arrows: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1024,

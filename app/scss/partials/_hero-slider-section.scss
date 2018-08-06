@@ -29,13 +29,19 @@
     top: 50%;
     transform: translateY(-50%);
     @media screen and (max-width: 1024px) {
-      top: 35%;
+      top: 40%;
+    }
+    @media screen and (max-width: 768px) {
+
     }
   }
 
   .slick-slide img {
-    min-height: 500px;
+    min-height: 600px;
     object-fit: cover;
+    @media screen and (max-width: 425px) {
+      min-height: 570px;
+    }
   }
 
   .slick-dots {
