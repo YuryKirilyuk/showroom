@@ -20,6 +20,9 @@
 
 nav.navbar.bootsnav.navbar-transparent.white {
   height: $headerHeight;
+  @media (max-width: 1024px) {
+    background: transparent;
+  }
   @media (max-width: 375px) {
     height: $headerHeightMobile;
   }
@@ -70,13 +73,16 @@ nav.navbar.bootsnav ul.nav > li > a {
     padding: 29px 15px;
     display: flex;
     justify-content: space-between;
+    .navbar-transparent & {
+      color: #fff;
+    }
     @media (max-width: 375px) {
       padding: 2rem 1rem;
     }
   }
 }//.login
 
-.navbar-transparent {
+nav.navbar-transparent.bootsnav {
   .login {
     color: #fff;
     &:before {
@@ -89,6 +95,9 @@ nav.navbar.bootsnav ul.nav > li > a {
       }
     }
   }//.login
+  .navbar-toggle {
+    color: #fff;
+  }
 }//.navbar-transparent
 
 

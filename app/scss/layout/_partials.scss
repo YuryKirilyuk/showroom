@@ -37,6 +37,14 @@
 		width: 9rem;
 	}
 }//.logo
+nav.navbar.bootsnav.navbar-fixed.navbar-transparent {
+	.logo-display {
+		display: block !important;
+	}
+	.logo-scrolled {
+		display: none !important;
+	}
+}
 
 .instagram 	{
 	background: url(../img/icons/instagram@2x.png) no-repeat center;
