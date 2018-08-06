@@ -23,7 +23,6 @@
     max-height: 33rem;
     overflow: hidden;
     position: relative;
-    //width: 25.5rem;
     img {
       width: 100%;
     }
@@ -42,14 +41,16 @@
   }
 
   .occasion-title {
-    align-items: flex-end;
+    align-items: flex-start;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
     bottom: 0;
     color: #fff;
     display: flex;
+    flex-direction: column;
     font-family: $custom-font-family;
     font-size: 1.8rem;
     font-weight: 500;
+    justify-content: flex-end;
     left: 0;
     line-height: 1.5;
     padding: 2rem;
@@ -64,9 +65,15 @@
     }
   }
   .occasion-place {
+    display: block;
+    font-family: $base-font-family;
+    font-size: 1.2rem;
+    max-width: 100%;
     overflow: hidden;
+    padding-top: 1.1rem;
     text-overflow: ellipsis;
     white-space: nowrap;
+    .fa {margin-right: 1.2rem;}
   }
   .occasion-date {
     margin-bottom: 0;
