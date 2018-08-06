@@ -5037,7 +5037,7 @@ nav.navbar.bootsnav ul.nav > li > a { color: #9d9d9d; font-size: 1.4rem; padding
 @media screen and (max-width: 1023px) { .navbar-transparent .login { color: #9d9d9d; }
   .navbar-transparent .login:before { border-left-color: #9d9d9d; } }
 
-@media (max-width: 992px) { nav.navbar.bootsnav .navbar-header { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+@media (max-width: 992px) { nav.navbar.bootsnav .navbar-header { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0; }
   nav.navbar.bootsnav .navbar-header .navbar-toggle { margin-top: 1.7rem; } }
 
 @media screen and (max-width: 992px) { div#navbar-menu { background: #fff; margin: 0; overflow: hidden !important; width: 100%; } }
