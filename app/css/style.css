@@ -5070,7 +5070,7 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 @media screen and (max-width: 768px) { .hero-slider .main-page-title { font-size: 4rem; line-height: 1.25; } }
 
-.hero-slider .subtitle { font-size: 2rem; line-height: 1.5; }
+.hero-slider .subtitle { font-size: 2.4rem; line-height: 3rem; }
 
 .hero-slider .container { left: 0; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
