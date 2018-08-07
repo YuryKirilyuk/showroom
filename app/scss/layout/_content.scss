@@ -18,9 +18,22 @@ h2{
 	font-weight: 400;	
 }
 
+.text-block,
+p {
+	color: #666;
+	font-size: 1.6rem;
+	line-height: 3rem;
+}
+
 /* text position */
 .nowrap{white-space: nowrap!important;}
 
+.bg-w {
+	background-color: #fff;
+}
+.bg-g {
+	background-color: #f6f6f6;
+}
 
 /* loader */
 .loaded .main-wrapper{visibility:hidden;}
@@ -48,6 +61,7 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: $headerHeight;
 }
 
 

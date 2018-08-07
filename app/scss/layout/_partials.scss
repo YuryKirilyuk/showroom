@@ -15,7 +15,8 @@
 	max-width: 76rem;
 	text-align: center;
 }
-.section-title {
+h2.section-title {
+	color: $black;
 	font-family: $title-font-family;
 	font-size: 3rem;
 	font-weight: 600;
@@ -27,6 +28,12 @@
 		line-height: normal;
 		margin-bottom: 2.5rem;
 	}
+}
+h3.section-title {
+	@extend h2.section-title;
+	font-size: 2.4rem;
+	line-height: normal;
+	margin-bottom: 3rem;
 }
 .item-title {
 	font-size: 1.8rem;
@@ -61,5 +68,6 @@ nav.navbar.bootsnav.navbar-fixed.navbar-transparent {
 	background-size: cover;
 	display: inline-block;
 	height: 2.4rem;
+	margin-top: 5px;
 	width: 2.4rem;
 }
