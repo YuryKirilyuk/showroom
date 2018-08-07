@@ -1,24 +1,59 @@
 .occasion-section {
   margin-top: -10rem;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
+  @media screen and (max-width: 425px) {
+    //padding-bottom: 8rem;
+  }
   @media screen and (max-width: 374px) {
     .col-xs-6 {
       padding-right: 1rem;
       padding-left: 1rem;
       //width: 100%;
     }
+  }//@media screen and (max-width: 374px)
+
+
+  .btn {
+    margin-top: 2rem;
+    @media screen and (max-width: 425px) {
+      margin-top: 2.7rem;
+    }
   }
+
+  @media screen and (max-width: 375px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      &:before,
+      &:after {
+        content: none;
+      }
+    }
+    .col-xs-6 {
+      max-width: 17rem;
+      padding: 0;
+    }
+  }//@media screen and (max-width: 375px)
+
+
+
 }//.occasion-section
+
 .occasion-item {
   background-color: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
   margin-bottom: 3rem;
+  overflow: hidden;
   transition: $default-transition;
   &:hover {
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
   }
-
+  @media screen and (max-width: 425px) {
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+  }
   .occasion-image {
     max-height: 33rem;
     overflow: hidden;
@@ -47,9 +82,9 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-    font-family: $custom-font-family;
+    //font-family: $custom-font-family;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     justify-content: flex-end;
     left: 0;
     line-height: 1.5;
@@ -66,7 +101,7 @@
   }
   .occasion-place {
     display: block;
-    font-family: $base-font-family;
+    //font-family: $base-font-family;
     font-size: 1.2rem;
     max-width: 100%;
     overflow: hidden;

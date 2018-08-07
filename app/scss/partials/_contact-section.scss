@@ -1,19 +1,40 @@
 .contact-section {
   padding: 4.5rem 0 10rem;
+  @media screen and (max-width: 425px) {
+    padding: .3rem 0 8rem;
+  }
 
   .section-title {
     margin-bottom: 1rem;
+    @media screen and (max-width: 425px) {
+      br {display: none;}
+    }
   }
 
   .section-content {
+    margin: auto;
+    max-width: 620px;
     p {
       font-size: 1.6rem;
-      margin-bottom: 4.5rem;
+      line-height: 3rem;
+      margin-bottom: 4.7rem;
       text-align: center;
+      @media screen and (max-width: 425px) {
+        margin-bottom: 4rem;
+      }
     }
   }//.section-content
 
+  .contact-form {
+    @media screen and (max-width: 425px) {
+      padding: 0 2.5rem;
+    }
+  }//.contact-form
+
   .btn {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    @media screen and (max-width: 425px) {
+      margin-top: 1rem;
+    }
   }
 }//.contact-section

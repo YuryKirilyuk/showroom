@@ -1,6 +1,9 @@
 .how-it-works-section {
   background: #fff;
-  padding: 6rem 0;
+  padding: 2.3rem 0 6rem;
+  @media screen and (max-width: 425px) {
+    padding: .5rem 0 4rem;
+  }
 
   .section-content {
     display: flex;
@@ -23,7 +26,11 @@
     max-width: 280px;
     text-align: center;
     .item-title {
-      margin-bottom: 2rem;
+      margin-bottom: 2.1rem;
+      @media screen and (max-width: 425px) {
+        line-height: 3rem;
+        margin-bottom: 1.5rem;
+      }
     }
     .item-text {
       font-size: 1.4rem;

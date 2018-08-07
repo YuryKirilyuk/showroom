@@ -1,3 +1,10 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+}//@media screen and (min-width: 1200px)
+
+
 h1{
 	@include font($font-size-h1,$line-height-h1,$title-color);
 	font-family: $title-font-family;
