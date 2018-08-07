@@ -5198,20 +5198,36 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .community-section { padding: 6.5rem 0 10.5rem; }
 
+@media screen and (max-width: 375px) { .community-section { margin: 0 2.5rem; padding-bottom: 17.7rem; } }
+
+@media screen and (max-width: 320px) { .community-section { margin: 0 1rem; } }
+
 .community-section .text-block { margin: auto; max-width: 80rem; text-align: center; }
 
-.community-section .community-slider { margin-top: 5rem; text-align: center; }
+.community-section .community-slider { margin-top: 5rem; padding: 0 7px; text-align: center; }
 
 .community-section .community-slider .community-image { border-radius: 50%; display: inline-block; height: 14rem; margin-bottom: 4.2rem; overflow: hidden; width: 14rem; }
 
+@media screen and (max-width: 375px) { .community-section .community-slider .community-image { height: 10rem; margin-bottom: 2.5rem; width: 10rem; } }
+
 .community-section .community-slider .community-title { color: #666; font-family: "Vollkorn", serif; font-size: 2rem; font-weight: bold; line-height: 1.8rem; }
 
-.community-section .community-slider .slick-arrow { background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAAAAACsmEV8AAABAUlEQVQokWP4jwr+Vh7//58BTbDewPISumCPgYGB3W1UwZkGIJCFIrgcLOb/DllwiyFIzOM5spn7TUBiTg+RbT9lBhKzvfkfSfCKFUjM8sJ/JMG79iAx0+P/kQSfuoHEjPf9RxJ87QsSM9z0H0nwUwjYgcv+Iwl+jwOLzfyPJPg7AyzW/R9J8G8xWKzuP7JgA1is8C+yYD9YLOXXf0zBzN//sWiv+Ici+LcELNqKIghz0mQUQZjjF6IIwry5DkXw/2sfkKDRThRBaNCZHkYRhAayxVkUQWh02FxDEYRGnONdFEFoFLs9RU1gkMTg8/o/lmQT/BFbAssnIiliT7SQ5A0Akcsm3QRKNwEAAAAASUVORK5CYII=") #fff no-repeat center; background-size: 10px 18px; border: solid 1px #e1e1e1; border-radius: 50%; height: 6rem; position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 6rem; z-index: 10; }
+@media screen and (max-width: 375px) { .community-section .community-slider .community-title { line-height: 2.6rem; max-width: 120px; margin: auto; } }
+
+.community-section .community-slider .slick-arrow { background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAAAAACsmEV8AAABAUlEQVQokWP4jwr+Vh7//58BTbDewPISumCPgYGB3W1UwZkGIJCFIrgcLOb/DllwiyFIzOM5spn7TUBiTg+RbT9lBhKzvfkfSfCKFUjM8sJ/JMG79iAx0+P/kQSfuoHEjPf9RxJ87QsSM9z0H0nwUwjYgcv+Iwl+jwOLzfyPJPg7AyzW/R9J8G8xWKzuP7JgA1is8C+yYD9YLOXXf0zBzN//sWiv+Ici+LcELNqKIghz0mQUQZjjF6IIwry5DkXw/2sfkKDRThRBaNCZHkYRhAayxVkUQWh02FxDEYRGnONdFEFoFLs9RU1gkMTg8/o/lmQT/BFbAssnIiliT7SQ5A0Akcsm3QRKNwEAAAAASUVORK5CYII=") #fff no-repeat center; background-size: 10px 18px; border: solid 1px #e1e1e1; border-radius: 50%; height: 6rem; position: absolute; top: 35%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 6rem; z-index: 10; }
+
+@media screen and (max-width: 1024px) { .community-section .community-slider .slick-arrow { margin: 0 -1.5rem 0; top: 125%; } }
+
+@media screen and (max-width: 375px) { .community-section .community-slider .slick-arrow { top: 138%; } }
 
 .community-section .community-slider .slick-arrow:hover { box-shadow: 0 0 15px -5px #333; }
 
-.community-section .community-slider .slick-arrow.slick-prev { left: -10%; }
+.community-section .community-slider .slick-arrow.slick-prev { left: -7.5%; }
 
-.community-section .community-slider .slick-arrow.slick-next { right: -10%; -webkit-transform: translateY(-50%) rotateZ(180deg); -ms-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotateZ(180deg); }
+@media screen and (max-width: 1024px) { .community-section .community-slider .slick-arrow.slick-prev { left: 50%; -webkit-transform: translateY(-50%) translateX(-100%); -ms-transform: translateY(-50%) translateX(-100%); transform: translateY(-50%) translateX(-100%); } }
+
+.community-section .community-slider .slick-arrow.slick-next { right: -7.5%; -webkit-transform: translateY(-50%) rotateZ(180deg); -ms-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotateZ(180deg); }
+
+@media screen and (max-width: 1024px) { .community-section .community-slider .slick-arrow.slick-next { right: 50%; -webkit-transform: translateY(-50%) translateX(100%) rotateZ(180deg); -ms-transform: translateY(-50%) translateX(100%) rotate(180deg); transform: translateY(-50%) translateX(100%) rotateZ(180deg); } }
 
 /*# sourceMappingURL=style.css.map */

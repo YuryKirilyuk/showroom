@@ -1,5 +1,12 @@
 .community-section {
   padding: 6.5rem 0 10.5rem;
+  @media screen and (max-width: 375px) {
+    margin: 0 2.5rem;
+    padding-bottom: 17.7rem;
+  }
+  @media screen and (max-width: 320px) {
+    margin: 0 1rem;
+  }
 
   .text-block {
     margin: auto;
@@ -9,6 +16,7 @@
 
   .community-slider {
     margin-top: 5rem;
+    padding: 0 7px;
     text-align: center;
     .community-image {
       border-radius: 50%;
@@ -17,13 +25,23 @@
       margin-bottom: 4.2rem;
       overflow: hidden;
       width: 14rem;
-    }
+      @media screen and (max-width: 375px) {
+        height: 10rem;
+        margin-bottom: 2.5rem;
+        width: 10rem;
+      }
+    }//.community-image
     .community-title {
       color: #666;
       font-family: $title-font-family;
       font-size: 2rem;
       font-weight: bold;
       line-height: 1.8rem;
+      @media screen and (max-width: 375px) {
+        line-height: 2.6rem;
+        max-width: 120px;
+        margin: auto;
+      }
     }
     .slick-arrow {
       background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAAAAACsmEV8AAABAUlEQVQokWP4jwr+Vh7//58BTbDewPISumCPgYGB3W1UwZkGIJCFIrgcLOb/DllwiyFIzOM5spn7TUBiTg+RbT9lBhKzvfkfSfCKFUjM8sJ/JMG79iAx0+P/kQSfuoHEjPf9RxJ87QsSM9z0H0nwUwjYgcv+Iwl+jwOLzfyPJPg7AyzW/R9J8G8xWKzuP7JgA1is8C+yYD9YLOXXf0zBzN//sWiv+Ici+LcELNqKIghz0mQUQZjjF6IIwry5DkXw/2sfkKDRThRBaNCZHkYRhAayxVkUQWh02FxDEYRGnONdFEFoFLs9RU1gkMTg8/o/lmQT/BFbAssnIiliT7SQ5A0Akcsm3QRKNwEAAAAASUVORK5CYII=') #fff no-repeat center;
@@ -32,21 +50,38 @@
       border-radius: 50%;
       height: 6rem;
       position: absolute;
-      top: 50%;
+      top: 35%;
       transform: translateY(-50%);
       width: 6rem;
       z-index: 10;
+      @media screen and (max-width: 1024px) {
+        margin: 0 -1.5rem 0;
+        top: 125%;
+      }
+      @media screen and (max-width: 375px) {
+        top: 138%;
+      }
       &:hover {
         box-shadow: 0 0 15px -5px #333;
       }
+
       &.slick-prev {
-        left: -10%;
-      }
+        left: -7.5%;
+        @media screen and (max-width: 1024px) {
+          left: 50%;
+          transform: translateY(-50%) translateX(-100%);
+        }
+      }//&.slick-prev
+
       &.slick-next {
-        right: -10%;
+        right: -7.5%;
         transform: translateY(-50%) rotateZ(180deg);
-      }
-    }
+        @media screen and (max-width: 1024px) {
+          right: 50%;
+          transform: translateY(-50%) translateX(100%) rotateZ(180deg);
+        }
+      }//&.slick-next
+    }//.slick-arrow
 
   }//.community-slider
 }//.community-section

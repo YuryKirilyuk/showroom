@@ -40,12 +40,20 @@ $(function(){
         slidesToScroll: 1,
         adaptiveHeight: false,
         arrows: true,
-        autoplay: true,
+        //autoplay: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
             {
-                breakpoint: 425,
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 601,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
