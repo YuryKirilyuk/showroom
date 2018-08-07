@@ -18,7 +18,11 @@
       height: 5rem;
     }
   }
+  input[type="text"],
+  input[type="email"] {
+    @extend .form-control;
+  }
 }//.form-group
-[class*="form-control"] {
+textarea[class*="form-control"] {
   @extend .form-control;
 }
