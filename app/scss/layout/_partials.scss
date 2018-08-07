@@ -63,24 +63,3 @@ nav.navbar.bootsnav.navbar-fixed.navbar-transparent {
 	height: 2.4rem;
 	width: 2.4rem;
 }
-
-.form-group {
-	margin-bottom: 2rem;
-	@media screen and (max-width: 425px) {
-		margin-bottom: 3rem;
-	}
-	label {
-		color: #666;
-		font-size: 1.2rem;
-		font-weight: bold;
-		line-height: 2.5;
-		margin-bottom: 0;
-	}
-	.form-control {
-		border-radius: 4px;
-		padding: 6px 2rem;
-		&:not(textarea) {
-			height: 5rem;
-		}
-	}
-}//.form-group

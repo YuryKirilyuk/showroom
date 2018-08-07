@@ -17,12 +17,6 @@ h2{
 	padding: 1.5rem 0;
 	font-weight: 400;	
 }
-h3{
-	@include font($font-size-h3,$line-height-h3,$title-color);
-	font-family: $title-font-family;
-	padding: 1.5rem 0;
-	font-weight: 400;
-}
 
 /* text position */
 .nowrap{white-space: nowrap!important;}

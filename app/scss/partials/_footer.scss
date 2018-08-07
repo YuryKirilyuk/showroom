@@ -84,23 +84,19 @@ footer{
 		color: #fff;
 		font-size: 1.6rem;
 		line-height: 3rem;
-		margin-bottom: 2rem;
+		margin-bottom: 2.1rem;
+		margin-top: 0;
 	}
 
 	ul {
 		list-style: none;
 		padding: 0;
 		li {
-			//margin-bottom: 1.2rem;
-		}
-	}
-
-	&.widget-links {
-		li {
 			font-size: 1.4rem;
 			a {line-height: 2.7rem;}
 		}
 	}
+
 	&.wrapper {
 		@media screen and (max-width: 374px) {
 			display: flex;
