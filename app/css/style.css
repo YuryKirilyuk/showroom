@@ -5016,6 +5016,8 @@ footer .logo { margin-bottom: 1.5rem; }
 
 .btn:hover, input[type="submit"]:hover { color: #fff; }
 
+@media screen and (min-width: 1025px) { nav.bootsnav .container { height: 100%; left: 120px; position: absolute; right: 120px; top: 0; width: auto; } }
+
 .navbar.navbar-transparent div.logo { margin-top: 2rem; }
 
 @media screen and (max-width: 375px) { .navbar.navbar-transparent div.logo { margin-top: 1.7rem; } }
@@ -5040,13 +5042,21 @@ nav.navbar.bootsnav.navbar-fixed { height: 9rem; top: 0; }
 
 @media (max-width: 375px) { nav.navbar.bootsnav.navbar-fixed { height: 7.2rem; } }
 
-nav.navbar.bootsnav ul.nav > li > a { color: #9d9d9d; font-family: "Open Sans", sans-serif; font-size: 1.4rem; font-weight: 600; padding: 29px 25px; text-transform: none; }
+nav.navbar.bootsnav ul.nav > li > a { font-family: "Open Sans", sans-serif; font-size: 1.4rem; font-weight: 600; padding: 29px 25px; text-transform: none; }
 
-nav.navbar.bootsnav ul.nav > li > a:hover { color: #e12c46 !important; }
+nav.navbar.bootsnav.white ul.nav > li > a { color: #999; }
 
-nav.navbar.bootsnav ul.nav > li.active > a { color: #e12c46 !important; }
+nav.navbar.bootsnav.white ul.nav > li > a:hover { color: #343f4b !important; }
 
-.login { float: right; color: #9d9d9d; font-size: 14px; margin: .1rem 0 0 1.7rem; padding-left: 2rem; position: relative; }
+nav.navbar.bootsnav.white ul.nav > li.active > a { color: #343f4b !important; }
+
+nav.navbar.bootsnav.navbar-transparent.white ul.nav > li > a { color: #fff; }
+
+nav.navbar.bootsnav.navbar-transparent.white ul.nav > li > a:hover { color: #c2c2c2 !important; }
+
+nav.navbar.bootsnav.navbar-transparent.white ul.nav > li.active > a { color: #c2c2c2 !important; }
+
+.login { float: right; color: #999; font-size: 14px; margin: .1rem 0 0 1.7rem; padding-left: 2rem; position: relative; }
 
 .login:before { content: ''; height: 2rem; border-left: 1px solid #9d9d9d; position: absolute; bottom: 0; top: 0; left: 0; margin: auto; }
 
@@ -5054,13 +5064,21 @@ nav.navbar.bootsnav ul.nav > li.active > a { color: #e12c46 !important; }
 
 @media screen and (max-width: 375px) { .login { margin-top: 0; } }
 
-.login .fa { font-size: 3rem; margin-right: 1.5rem; }
+.login .fa { color: #c1c1c1; font-size: 3rem; margin-right: 1.5rem; }
+
+.navbar-transparent.white .login .fa { color: #fff; }
 
 .login a { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 29px 15px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; font-weight: 600; }
 
-.login a:hover { color: #e12c46 !important; }
+.login a:hover { color: #343f4b !important; }
 
-.navbar-transparent .login a { color: #fff; }
+.login a:hover .fa { color: #9c9c9c; }
+
+.navbar-transparent.white .login a { color: #fff; }
+
+.navbar-transparent.white .login a:hover { color: #c2c2c2 !important; }
+
+.navbar-transparent.white .login a:hover .fa { color: #c2c2c2; }
 
 @media (max-width: 375px) { .login a { padding: 2rem .2rem; } }
 
@@ -5078,7 +5096,8 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 @media screen and (max-width: 375px) { nav.navbar.bootsnav .navbar-header { padding-left: 5px; } }
 
-@media screen and (max-width: 992px) { div#navbar-menu { background: #fff; margin: 0; overflow: hidden !important; width: 100%; } }
+@media screen and (max-width: 992px) { div#navbar-menu { background: #fff; margin: 0; overflow: hidden !important; width: 100%; }
+  div#navbar-menu a { color: #343f4b; } }
 
 .form-group { margin-bottom: 2rem; }
 

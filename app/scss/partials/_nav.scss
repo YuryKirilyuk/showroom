@@ -1,3 +1,14 @@
+nav.bootsnav .container {
+  @media screen and (min-width: 1025px) {
+    height: 100%;
+    left: 120px;
+    position: absolute;
+    right: 120px;
+    top: 0;
+    width: auto;
+  }
+}//nav.bootsnav .container
+
 .navbar.navbar-transparent {
   div.logo {
     margin-top: 2rem;
@@ -44,26 +55,58 @@ nav.navbar.bootsnav.navbar-fixed {
   }
 }
 
-nav.navbar.bootsnav ul.nav > li {
-  > a {
-    color: #9d9d9d;
-    font-family: $base-font-family;
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 29px 25px;
-    text-transform: none;
-    &:hover {
-      color: #e12c46 !important;
+
+
+
+nav.navbar.bootsnav {
+  ul.nav {
+    > li {
+      > a {
+        font-family: $base-font-family;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 29px 25px;
+        text-transform: none;
+      }//a
+    }//li
+  }//ul.nav
+
+  &.white ul.nav > li {
+     > a {
+      color: #999;
+      &:hover {
+        color: #343f4b !important;
+      }
+    }//a
+    &.active > a {
+      color: #343f4b !important;
     }
-  }//a
-  &.active > a {
-    color: #e12c46 !important;
-  }
-}
+  }//&.white ul.nav
+
+  &.navbar-transparent.white ul.nav > li {
+     > a {
+      color: #fff;
+      &:hover {
+        color: #c2c2c2 !important;
+      }
+    }//a
+    &.active > a {
+      color: #c2c2c2 !important;
+    }
+  }//&.navbar-transparent.white ul.nav
+
+}//nav.navbar.bootsnav
+
+
+
+
+
+
+
 
 .login {
   float: right;
-  color: #9d9d9d;
+  color: #999;
   font-size: 14px;
   margin: .1rem 0 0 1.7rem;
   padding-left: 2rem;
@@ -84,10 +127,17 @@ nav.navbar.bootsnav ul.nav > li {
   @media screen and (max-width: 375px){
     margin-top: 0;
   }
+
+
   .fa {
+    color: #c1c1c1;
     font-size: 3rem;
     margin-right: 1.5rem;
-  }
+    .navbar-transparent.white & {
+      color: #fff;
+    }
+  }//.fa
+
   a {
     align-items: center;
     padding: 29px 15px;
@@ -95,11 +145,17 @@ nav.navbar.bootsnav ul.nav > li {
     justify-content: space-between;
     font-weight: 600;
     &:hover {
-      color: #e12c46 !important;
+      color: #343f4b !important;
+      .fa {color: darken(#c2c2c2, 15%);}
     }
-    .navbar-transparent & {
+    .navbar-transparent.white & {
       color: #fff;
-    }
+      &:hover {
+        color: #c2c2c2 !important;
+        .fa {color: #c2c2c2;}
+      }
+    }//.navbar-transparent.white
+
     @media (max-width: 375px) {
       padding: 2rem .2rem;
     }
@@ -156,5 +212,6 @@ nav.navbar-transparent.bootsnav {
     margin: 0;
     overflow: hidden!important;
     width: 100%;
+    a {color: #343f4b;}
   }
 }

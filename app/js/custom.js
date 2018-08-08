@@ -35,7 +35,7 @@ $(function(){
 
     $('.community-slider').slick({
         dots: false,
-        speed: 700,
+        speed: 400,
         slidesToShow: 5,
         slidesToScroll: 1,
         adaptiveHeight: false,
