@@ -26,6 +26,7 @@
     max-width: 280px;
     text-align: center;
     .item-title {
+      color: #343f4b;
       margin-bottom: 2.1rem;
       @media screen and (max-width: 425px) {
         line-height: 3rem;
@@ -33,6 +34,7 @@
       }
     }
     .item-text {
+      color: #666;
       font-size: 1.4rem;
       line-height: 2.7rem;
     }

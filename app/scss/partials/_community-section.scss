@@ -34,16 +34,18 @@
       }
       &:hover {
         box-shadow: 0 5px 20px rgba(0,0,0,.3);
-        //transform: translateY(-5px);
+        + .community-title a {color: #1f2d3d;}
       }
     }//.community-image
     .community-title {
-      color: #343f4b;
       font-size: 1.6rem;
       font-weight: bold;
       line-height: 1.8rem;
-      a:hover {
-        color: #343f4b;
+      a {
+        color: #666;
+        &:hover {
+          color: #1f2d3d;
+        }
       }
 
       @media screen and (max-width: 375px) {
