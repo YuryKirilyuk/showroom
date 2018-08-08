@@ -1,5 +1,5 @@
 .community-section {
-  padding: 6.5rem 0 10.5rem;
+  padding: 6.5rem 0 11rem;
   @media screen and (max-width: 375px) {
     margin: 0 2.5rem;
     padding-bottom: 17.7rem;
@@ -15,20 +15,26 @@
   }
 
   .community-slider {
-    margin-top: 5rem;
+    margin-top: 7rem;
     padding: 0 7px;
     text-align: center;
     .community-image {
       border-radius: 50%;
       display: inline-block;
       height: 14rem;
-      margin-bottom: 4.2rem;
+      margin-bottom: 4rem;
+      margin-top: 1rem;
       overflow: hidden;
+      transition: all .3s;
       width: 14rem;
       @media screen and (max-width: 375px) {
         height: 10rem;
         margin-bottom: 2.5rem;
         width: 10rem;
+      }
+      &:hover {
+        box-shadow: 0 2px 20px rgba(0,0,0,.3);
+        transform: translateY(-5px);
       }
     }//.community-image
     .community-title {
@@ -37,6 +43,10 @@
       font-size: 2rem;
       font-weight: bold;
       line-height: 1.8rem;
+      a:hover {
+        color: #343f4b;
+      }
+
       @media screen and (max-width: 375px) {
         line-height: 2.6rem;
         max-width: 120px;

@@ -2,10 +2,14 @@ nav.bootsnav .container {
   @media screen and (min-width: 1025px) {
     height: 100%;
     left: 120px;
+    padding: 0;
     position: absolute;
     right: 120px;
     top: 0;
     width: auto;
+    .login a {
+      padding-right: 0;
+    }
   }
 }//nav.bootsnav .container
 
@@ -37,6 +41,7 @@ nav.bootsnav .container {
 }//.navbar
 
 nav.navbar.bootsnav.navbar-transparent.white {
+  border-bottom: none;
   height: $headerHeight;
   @media (max-width: 1024px) {
     background: transparent;

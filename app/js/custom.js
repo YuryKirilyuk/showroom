@@ -37,7 +37,7 @@ $(function(){
         dots: false,
         speed: 400,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         adaptiveHeight: false,
         arrows: true,
         //autoplay: true,
@@ -48,7 +48,7 @@ $(function(){
                 breakpoint: 1025,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                     infinite: true
                 }
             },
