@@ -22,7 +22,7 @@
       border-radius: 50%;
       display: inline-block;
       height: 14rem;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
       margin-top: 1rem;
       overflow: hidden;
       transition: all .3s;
@@ -33,14 +33,13 @@
         width: 10rem;
       }
       &:hover {
-        box-shadow: 0 2px 20px rgba(0,0,0,.3);
-        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0,0,0,.3);
+        //transform: translateY(-5px);
       }
     }//.community-image
     .community-title {
-      color: #666;
-      font-family: $title-font-family;
-      font-size: 2rem;
+      color: #343f4b;
+      font-size: 1.6rem;
       font-weight: bold;
       line-height: 1.8rem;
       a:hover {

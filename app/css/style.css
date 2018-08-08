@@ -4948,7 +4948,7 @@ h2.section-title, h3.section-title { color: #000; font-family: "Vollkorn", serif
 
 @media screen and (max-width: 425px) { h2.section-title, h3.section-title { font-size: 2.4rem; line-height: normal; margin-bottom: 2.5rem; } }
 
-h3.section-title { font-size: 2.4rem; line-height: normal; margin-bottom: 3rem; }
+h3.section-title { color: #ff0562; font-size: 2.4rem; line-height: normal; margin-bottom: 3rem; }
 
 .item-title { font-size: 1.8rem; font-weight: bold; }
 
@@ -5218,7 +5218,7 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 @media screen and (max-width: 425px) { .contact-section input[type="submit"] { margin-top: 1rem; } }
 
-.text-section { padding: 4.2rem 0 4.5rem; text-align: center; }
+.text-section { padding: 4.2rem 0 5rem; text-align: center; }
 
 .text-section .section-content { max-width: 80rem; margin: auto; }
 
@@ -5232,13 +5232,13 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .community-section .community-slider { margin-top: 7rem; padding: 0 7px; text-align: center; }
 
-.community-section .community-slider .community-image { border-radius: 50%; display: inline-block; height: 14rem; margin-bottom: 4rem; margin-top: 1rem; overflow: hidden; -webkit-transition: all .3s; transition: all .3s; width: 14rem; }
+.community-section .community-slider .community-image { border-radius: 50%; display: inline-block; height: 14rem; margin-bottom: 2rem; margin-top: 1rem; overflow: hidden; -webkit-transition: all .3s; transition: all .3s; width: 14rem; }
 
 @media screen and (max-width: 375px) { .community-section .community-slider .community-image { height: 10rem; margin-bottom: 2.5rem; width: 10rem; } }
 
-.community-section .community-slider .community-image:hover { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); -webkit-transform: translateY(-5px); -ms-transform: translateY(-5px); transform: translateY(-5px); }
+.community-section .community-slider .community-image:hover { box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
 
-.community-section .community-slider .community-title { color: #666; font-family: "Vollkorn", serif; font-size: 2rem; font-weight: bold; line-height: 1.8rem; }
+.community-section .community-slider .community-title { color: #343f4b; font-size: 1.6rem; font-weight: bold; line-height: 1.8rem; }
 
 .community-section .community-slider .community-title a:hover { color: #343f4b; }
 
