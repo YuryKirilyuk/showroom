@@ -17,6 +17,9 @@
   }//.modal-dialog
 
     .modal-content {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 5px 5px 25px 0 rgba(179, 179, 179, 0.25);
       padding: 3.3rem 8rem 3.5rem;
       @media screen and (max-width: 530px) {
         padding: 3.3rem 2rem 3.5rem;
@@ -46,12 +49,12 @@
       }//.modal-body
 
         .modal-title {
-          color: #313131;
+          //color: #313131;
           font-family: $title-font-family;
           font-size: 2.2rem;
           font-weight: 600;
           line-height: 3rem;
-          margin-bottom: 5.5rem;
+          margin-bottom: 4rem;
           @media screen and (max-width: 530px) {
             margin-bottom: 4.5rem;
           }
@@ -64,7 +67,7 @@
             color: #fff;
             display: flex;
             font-size: 1.5rem;
-            font-weight: bold;
+            font-weight: 600;
             height: 5rem;
             line-height: 5rem;
             margin-bottom: 2rem;
@@ -81,6 +84,7 @@
             }
             .social-icon {
               font-size: 3.2rem;
+              font-weight: normal;
               line-height: 5rem;
               margin-right: 1rem;
               text-align: center;
@@ -125,13 +129,13 @@
       .modal-footer {
         border: none;
         color: #999;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 600;
         line-height: 27px;
         padding-top: 0.5rem;
         text-align: center;
         a {
-          color: #e12c46;
+          color: #343f4b;
           font-weight: 700;
           text-decoration: underline;
           &:hover {
