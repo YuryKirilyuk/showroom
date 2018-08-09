@@ -1,5 +1,152 @@
 .modal {
-  .modal-header {
-    text-align: center;
+
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    padding-right: 0 !important;
   }
+
+  .modal-dialog {
+    @media screen and (min-width: 769px) {
+      max-width: 50rem;
+    }
+    @media screen and (max-width: 375px) {
+      height: 100%;
+      margin: 0;
+      .logo {width: 11.4rem;}
+    }
+  }//.modal-dialog
+
+    .modal-content {
+      padding: 3.3rem 8rem 3.5rem;
+      @media screen and (max-width: 530px) {
+        padding: 3.3rem 2rem 3.5rem;
+      }
+      @media screen and (max-width: 375px) {
+        border: none;
+        border-radius: 0;
+        height: 100%;
+      }
+      @media screen and (max-width: 374px) {
+        padding: 3.3rem 0rem 3.5rem;
+      }
+    }//.modal-content
+      .modal-header {
+        border: none;
+        margin-bottom: 2rem;
+      }
+        .close {
+          font-size: 2.8rem;
+          position: absolute;
+          right: 2rem;
+          top: 1.5rem;
+        }
+
+      .modal-body {
+
+      }//.modal-body
+
+        .modal-title {
+          color: #313131;
+          font-family: $title-font-family;
+          font-size: 2.2rem;
+          font-weight: 600;
+          line-height: 3rem;
+          margin-bottom: 5.5rem;
+          @media screen and (max-width: 530px) {
+            margin-bottom: 4.5rem;
+          }
+        }
+        .social-links {
+          .social-login {
+            align-items: center;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            display: flex;
+            font-size: 1.5rem;
+            font-weight: bold;
+            height: 5rem;
+            line-height: 5rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            text-align: left;
+            @media screen and (max-width: 385px) {
+              font-size: 1.4rem;
+            }
+            span {
+              display: block;
+              height: 100%;
+              width: 5rem;
+              img {display: block;}
+            }
+            .social-icon {
+              font-size: 3.2rem;
+              line-height: 5rem;
+              margin-right: 1rem;
+              text-align: center;
+            }
+            .user-avatar {margin-left: auto}
+          }//.social-login
+          .btn-instagram {
+            background: url(../img/instagram-background.jpg) no-repeat center;
+            background-size: cover;
+            position: relative;
+            &:before {
+              background: rgba(0,0,0,.07);
+              content: '';
+              height: 100%;
+              opacity: 0;
+              position: absolute;
+              width: 100%;
+              z-index: 0;
+            }
+            &:hover:before {
+              opacity: 1;
+            }
+            .social-icon {
+              background: url(../img/icons/instagram.svg) no-repeat center;
+              background-size: 32px;
+            }
+          }//.btn-instagram
+          .btn-facebook {
+            @include hover(#4267b2);
+          }
+          .btn-google {
+            @include hover(#fff);
+            border: solid 1px #a4a4a4;
+            color: #000;
+            .social-icon {
+              background: url(../img/icons/google-icon.png) no-repeat center;
+              background-size: 32px;
+            }
+          }
+        }//.social-links
+
+      .modal-footer {
+        border: none;
+        color: #999;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 27px;
+        padding-top: 0.5rem;
+        text-align: center;
+        a {
+          color: #e12c46;
+          font-weight: 700;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }//.modal-footer
+
 }//.modal
+
+.modal-backdrop.in {
+  opacity: .3;
+  filter: alpha(opacity=30);
+}
+.modal-open {
+  overflow: visible;
+  padding: 0 !important;
+}

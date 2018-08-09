@@ -4,7 +4,7 @@
 /*! Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=e038e098e002ebaab11e) Config saved to config.json and https://gist.github.com/e038e098e002ebaab11e */
 /*! Bootstrap v3.3.5 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,500|Vollkorn:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500|Vollkorn:400,600,700");
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -5110,7 +5110,70 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .form-group .form-control:not(textarea), .form-group input[type="text"]:not(textarea), .form-group input[type="email"]:not(textarea), .form-group textarea[class*="form-control"]:not(textarea) { height: 5rem; }
 
-.modal .modal-header { text-align: center; }
+.modal { text-align: center; }
+
+@media screen and (max-width: 768px) { .modal { padding-right: 0 !important; } }
+
+@media screen and (min-width: 769px) { .modal .modal-dialog { max-width: 50rem; } }
+
+@media screen and (max-width: 375px) { .modal .modal-dialog { height: 100%; margin: 0; }
+  .modal .modal-dialog .logo { width: 11.4rem; } }
+
+.modal .modal-content { padding: 3.3rem 8rem 3.5rem; }
+
+@media screen and (max-width: 530px) { .modal .modal-content { padding: 3.3rem 2rem 3.5rem; } }
+
+@media screen and (max-width: 375px) { .modal .modal-content { border: none; border-radius: 0; height: 100%; } }
+
+@media screen and (max-width: 374px) { .modal .modal-content { padding: 3.3rem 0rem 3.5rem; } }
+
+.modal .modal-header { border: none; margin-bottom: 2rem; }
+
+.modal .close { font-size: 2.8rem; position: absolute; right: 2rem; top: 1.5rem; }
+
+.modal .modal-title { color: #313131; font-family: "Vollkorn", serif; font-size: 2.2rem; font-weight: 600; line-height: 3rem; margin-bottom: 5.5rem; }
+
+@media screen and (max-width: 530px) { .modal .modal-title { margin-bottom: 4.5rem; } }
+
+.modal .social-links .social-login { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border: none; border-radius: 4px; color: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 1.5rem; font-weight: bold; height: 5rem; line-height: 5rem; margin-bottom: 2rem; overflow: hidden; text-align: left; }
+
+@media screen and (max-width: 385px) { .modal .social-links .social-login { font-size: 1.4rem; } }
+
+.modal .social-links .social-login span { display: block; height: 100%; width: 5rem; }
+
+.modal .social-links .social-login span img { display: block; }
+
+.modal .social-links .social-login .social-icon { font-size: 3.2rem; line-height: 5rem; margin-right: 1rem; text-align: center; }
+
+.modal .social-links .social-login .user-avatar { margin-left: auto; }
+
+.modal .social-links .btn-instagram { background: url(../img/instagram-background.jpg) no-repeat center; background-size: cover; position: relative; }
+
+.modal .social-links .btn-instagram:before { background: rgba(0, 0, 0, 0.07); content: ''; height: 100%; opacity: 0; position: absolute; width: 100%; z-index: 0; }
+
+.modal .social-links .btn-instagram:hover:before { opacity: 1; }
+
+.modal .social-links .btn-instagram .social-icon { background: url(../img/icons/instagram.svg) no-repeat center; background-size: 32px; }
+
+.modal .social-links .btn-facebook { background-color: #4267b2; }
+
+.modal .social-links .btn-facebook:hover { background-color: #3b5c9f; }
+
+.modal .social-links .btn-google { background-color: #fff; border: solid 1px #a4a4a4; color: #000; }
+
+.modal .social-links .btn-google:hover { background-color: #f2f2f2; }
+
+.modal .social-links .btn-google .social-icon { background: url(../img/icons/google-icon.png) no-repeat center; background-size: 32px; }
+
+.modal .modal-footer { border: none; color: #999; font-size: 1.4rem; font-weight: 600; line-height: 27px; padding-top: 0.5rem; text-align: center; }
+
+.modal .modal-footer a { color: #e12c46; font-weight: 700; text-decoration: underline; }
+
+.modal .modal-footer a:hover { text-decoration: none; }
+
+.modal-backdrop.in { opacity: .3; filter: alpha(opacity=30); }
+
+.modal-open { overflow: visible; padding: 0 !important; }
 
 .hero-slider { position: relative; }
 
