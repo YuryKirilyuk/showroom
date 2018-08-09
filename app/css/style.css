@@ -5200,9 +5200,9 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .modal .modal-footer { border: none; color: #999; font-size: 1.2rem; font-weight: 600; line-height: 27px; padding-top: 0.5rem; text-align: center; }
 
-.modal .modal-footer a { color: #343f4b; font-weight: 600; text-decoration: underline; }
+.modal .modal-footer a { color: #666; font-weight: 600; }
 
-.modal .modal-footer a:hover { text-decoration: none; }
+.modal .modal-footer a:hover { color: #1f2d3d; }
 
 .modal-backdrop.in { opacity: .3; filter: alpha(opacity=30); }
 

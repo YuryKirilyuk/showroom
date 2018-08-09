@@ -135,11 +135,12 @@
         padding-top: 0.5rem;
         text-align: center;
         a {
-          color: #343f4b;
+          color: #666;
           font-weight: 600;
-          text-decoration: underline;
+          //text-decoration: underline;
           &:hover {
-            text-decoration: none;
+            color: $black;
+            //text-decoration: none;
           }
         }
       }//.modal-footer
