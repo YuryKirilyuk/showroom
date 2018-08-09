@@ -18,22 +18,16 @@
 h2.section-title {
 	color: #1f2d3d;
 	font-family: $title-font-family;
-	font-size: 3rem;
+  font-size: 2.4rem;
 	font-weight: 600;
-	line-height: 4.5rem;
-	margin-bottom: 3.8rem;
+  line-height: normal;
+  margin-bottom: 3rem;
 	text-align: center;
 	@media screen and (max-width: 425px) {
 		font-size: 2.4rem;
 		line-height: normal;
 		margin-bottom: 2.5rem;
 	}
-}
-h3.section-title {
-	@extend h2.section-title;
-	font-size: 2.4rem;
-	line-height: normal;
-	margin-bottom: 3rem;
 }
 .item-title {
 	font-size: 1.8rem;

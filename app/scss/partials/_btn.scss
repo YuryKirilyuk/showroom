@@ -1,6 +1,7 @@
 .btn {
   @include hover($red);
   border: none;
+  border-radius: 30px;
   color: #fff;
   font-family: $base-font-family;
   font-size: 1rem;
