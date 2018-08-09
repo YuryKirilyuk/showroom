@@ -5204,7 +5204,7 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .modal .modal-footer a:hover { color: #1f2d3d; }
 
-.modal-backdrop.in { opacity: .3; filter: alpha(opacity=30); }
+.modal-backdrop.in { opacity: .4; filter: alpha(opacity=40); }
 
 .modal-open { overflow: visible; padding: 0 !important; }
 
