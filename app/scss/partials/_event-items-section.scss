@@ -10,7 +10,73 @@
     background: #ccc;
     margin-bottom: 2rem;
     width: 325px;
-  }
+
+    .grid-item-header {
+      align-items: center;
+      background: #fff;
+      display: flex;
+      min-height: 4rem;
+      padding: 1rem 1.2rem;
+
+      .user-avatar {
+        height: 3rem;
+        margin-right: 1rem;
+        width: 3rem;
+      }
+      .name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+      }
+      .place {
+        color: #979797;
+        font-size: .9rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+      }
+    }//.grid-item-header
+
+    .grid-item-footer {
+      align-items: center;
+      background: #fff;
+      color: #5f5f5f;
+      display: flex;
+      font-family: $custom-font-family;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      min-height: 6rem;
+      padding: 1.7rem 1.6rem;
+      .likes {
+        min-width: 8rem;
+        padding-right: 1rem;
+        i {
+          color: #F64135;
+          font-size: 2.6rem;
+          vertical-align: middle;
+        }
+      }//.likes
+      .wear {
+        i {
+          color: #F64135;
+          font-size: 1.8rem;
+          //vertical-align: middle;
+        }
+      }
+      .share {
+        color: #d8d8d8;
+        font-size: 2rem;
+        margin-left: auto;
+        &:hover {color: $black;}
+      }
+    }//.grid-item-footer
+
+  }//.grid-item
+
+
+
+
+
+
 
   .img1 {
     height: 275px;
@@ -31,5 +97,6 @@
     height: 571px;
     width: 100%;
   }
+
 
 }//.event-items-section

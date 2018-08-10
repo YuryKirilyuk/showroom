@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="17px" viewBox="0 0 22 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>4198ABD8-099F-4C47-8DC7-C5DF593122E0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M14.7333333,12.4666667 L14.7333333,7.93333333 L6.8,15.8666667 L14.7333333,23.8 L14.7333333,19.1533333 C20.4,19.1533333 24.3666667,20.9666667 27.2,24.9333333 C26.0666667,19.2666667 22.6666667,13.6 14.7333333,12.4666667 L14.7333333,12.4666667 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="image_block" transform="translate(-285.000000, -560.000000)">
+            <g>
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="540" width="325" height="58"></rect>
+                <g id="3.-Icons/ic_share2" transform="translate(279.000000, 552.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Icon" transform="translate(17.000000, 16.433333) scale(-1, 1) translate(-17.000000, -16.433333) "></g>
+                    <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8" fill-rule="evenodd">
+                        <g transform="translate(2.266667, 2.266667)" id="Gray-85">
+                            <rect x="0" y="0" width="29" height="29"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

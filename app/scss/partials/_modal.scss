@@ -11,8 +11,8 @@
       margin: 10rem auto 0;
     }
     @media screen and (max-width: 375px) {
-      //height: 100%;
-      //margin: 0;
+      height: 100%;
+      margin: 0;
       .logo {width: 11.4rem;}
     }
   }//.modal-dialog
@@ -26,9 +26,9 @@
         padding: 2rem 2rem 1rem;
       }
       @media screen and (max-width: 375px) {
-        //border: none;
-        //border-radius: 0;
-        //height: 100%;
+        border: none;
+        border-radius: 0;
+        height: 100%;
       }
       @media screen and (max-width: 374px) {
         padding: 2rem 0rem 1rem;
@@ -58,7 +58,7 @@
           line-height: 3rem;
           margin-bottom: 2.8rem;
           @media screen and (max-width: 530px) {
-            margin-bottom: 2.8rem;
+            //margin-bottom: 2.8rem;
           }
         }
         .social-links {
