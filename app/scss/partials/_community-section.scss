@@ -34,6 +34,7 @@
       }
       &:hover {
         box-shadow: 0 5px 20px rgba(0,0,0,.3);
+        transform: translateY(-5px);
         + .community-title a {color: #1f2d3d;}
       }
     }//.community-image

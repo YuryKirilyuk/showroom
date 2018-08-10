@@ -6,12 +6,13 @@
   }
 
   .modal-dialog {
-    @media screen and (min-width: 769px) {
-      max-width: 50rem;
+    @media screen and (min-width: 500px) {
+      max-width: 40rem;
+      margin: 10rem auto 0;
     }
     @media screen and (max-width: 375px) {
-      height: 100%;
-      margin: 0;
+      //height: 100%;
+      //margin: 0;
       .logo {width: 11.4rem;}
     }
   }//.modal-dialog
@@ -20,22 +21,23 @@
       border: none;
       border-radius: 8px;
       box-shadow: 5px 5px 25px 0 rgba(179, 179, 179, 0.25);
-      padding: 3.3rem 8rem 3.5rem;
+      padding: 2rem 3rem 1rem;
       @media screen and (max-width: 530px) {
-        padding: 3.3rem 2rem 3.5rem;
+        padding: 2rem 2rem 1rem;
       }
       @media screen and (max-width: 375px) {
-        border: none;
-        border-radius: 0;
-        height: 100%;
+        //border: none;
+        //border-radius: 0;
+        //height: 100%;
       }
       @media screen and (max-width: 374px) {
-        padding: 3.3rem 0rem 3.5rem;
+        padding: 2rem 0rem 1rem;
       }
     }//.modal-content
+
       .modal-header {
         border: none;
-        margin-bottom: 2rem;
+        //margin-bottom: 2rem;
       }
         .close {
           font-size: 2.8rem;
@@ -54,9 +56,9 @@
           font-size: 2.2rem;
           font-weight: 600;
           line-height: 3rem;
-          margin-bottom: 4rem;
+          margin-bottom: 2.8rem;
           @media screen and (max-width: 530px) {
-            margin-bottom: 4.5rem;
+            margin-bottom: 2.8rem;
           }
         }
         .social-links {
@@ -126,30 +128,26 @@
           }
         }//.social-links
 
-      .modal-footer {
-        border: none;
-        color: #999;
-        font-size: 1.2rem;
-        font-weight: 600;
-        line-height: 27px;
-        padding-top: 0.5rem;
-        text-align: center;
-        a {
-          color: #666;
-          font-weight: 600;
-          //text-decoration: underline;
-          &:hover {
-            color: $black;
-            //text-decoration: none;
-          }
-        }
-      }//.modal-footer
+  .modal-footer {
+    border: none;
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 21px;
+    padding-top: 0;
+    text-align: center;
+    a {
+      color: #636464;
+      font-weight: 600;
+      &:hover {color: $black;}
+    }
+  }//.modal-footer
 
 }//.modal
 
 .modal-backdrop.in {
-  opacity: .4;
-  filter: alpha(opacity=40);
+  opacity: .6;
+  filter: alpha(opacity=60);
 }
 .modal-open {
   overflow: visible;
