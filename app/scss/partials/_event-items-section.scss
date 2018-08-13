@@ -73,6 +73,90 @@
     }//.grid-item-header
 
 
+    .add-tag {
+      align-items: center;
+      display: flex;
+      position: absolute;
+      i {
+        color: #fff;
+        font-size: 1.4rem;
+      }
+      .delete-tag {
+        color: #d8d8d8;
+        float: right;
+        font-family: $custom-font-family;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        &:hover {color: $grey;}
+      }
+      .form {
+        background-color: #fff;
+        margin: 1.5rem 1rem;
+        padding: .5rem 1rem 1rem;
+        position: relative;
+        width: 18rem;
+        &:before {
+          content: '';
+          height: 0;
+          position: absolute;
+          width: 0;
+          z-index: 1;
+        }
+        input {
+          height: 20px;
+          border-radius: 4px;
+          border: solid 1px #ddd;
+          font-size: 1rem;
+          font-style: italic;
+          margin-bottom: 6px;
+          &:last-child {margin: 0;}
+        }
+      }//form
+      &.tag-left {
+        .form:before {
+          border-right: 7px solid #fff;
+          border-top: 7px solid transparent;
+          border-bottom: 7px solid transparent;
+          left: -7px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }//&.tag-left
+      &.tag-right {
+        flex-direction: row-reverse;
+        .form:before {
+          border-left: 7px solid #fff;
+          border-top: 7px solid transparent;
+          border-bottom: 7px solid transparent;
+          right: -7px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }//&.tag-right
+      &.tag-top {
+        flex-direction: column;
+        .form:before {
+          border-bottom: 7px solid #fff;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          top: -7px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }//&.tag-top
+      &.tag-bottom {
+        flex-direction: column-reverse;
+        .form:before {
+          border-top: 7px solid #fff;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          bottom: -7px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }//.adding-tags
 
 
 
