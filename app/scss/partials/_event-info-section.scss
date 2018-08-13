@@ -1,31 +1,63 @@
 .event-info-section {
   padding-top: $headerHeight;
   text-align: center;
-
-  .event-title {
-    font-family: $title-font-family;
-    font-size: 4.2rem;
-    font-weight: bold;
-    line-height: 5rem;
-    padding: 5rem 0 1rem;
+  @media screen and (max-width: 992px) {
+    height: auto;
   }
+
+  &:not(.has-image) {
+    .page-title {
+      color: $black;
+      padding: 5rem 0 1rem;
+    }
+    .subtitle {
+      color: $black;
+    }
+  }//&:not('.has-image')
+
   .section-content {
     font-family: $custom-font-family;
     line-height: 3rem;
     max-width: 80rem;
     margin: auto;
   }
-  .event-about-text {
+  .subtitle {
     border-bottom: 1px solid #d8d8d8;
     font-size: 1.6rem;
     margin-bottom: 3rem;
     padding-bottom: 3rem;
   }
   .event-persons-list {
-    color: #666;
+    align-items: center;
+    color: #fff;
+    display: flex;
     font-size: 1.4rem;
-    margin-bottom: 5rem;
-  }
+    justify-content: center;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+    ul {
+      margin-bottom: 0;
+      list-style: none;
+      @media screen and (max-width: 992px) {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 2rem;
+      }
+    }//ul
+    img {
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+    }
+    span {
+      display: block;
+    }
+  }//.event-persons-list
 
 }//event-info-section
 
