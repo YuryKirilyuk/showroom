@@ -7,8 +7,14 @@
   }
 
   .grid-item {
+    border-radius: 4px;
     margin-bottom: 2rem;
+    padding: 1rem;
+    transition: all .3s;
     width: 325px;
+    &:hover {
+      background: #fff;
+    }
 
     .grid-item-header {
       align-items: center;
@@ -162,7 +168,7 @@
 
 
     .grid-item-image {
-      min-height: 27.5rem;
+      //min-height: 27.5rem;
       position: relative;
 
       .item-tag {
