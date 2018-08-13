@@ -70,6 +70,7 @@ $(function(){
         itemSelector: '.grid-item',
         columnWidth: 325,
         gutter: 20,
+        horizontalOrder: true,
         fitWidth: true
     });
 

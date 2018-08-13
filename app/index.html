@@ -20,11 +20,14 @@
         ================================================== -->
 		<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full">
 			<div class="container">
+
+				<!-- When user is not logged in -->
 				<div class="login">
-					<a href="#">
+					<a href="#" data-toggle="modal" data-target="#login">
 						<i class="fa fa-user-circle"></i> Sign in
 					</a>
 				</div>
+
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 						<i class="fas fa-bars"></i>
@@ -371,6 +374,48 @@
 
 
 
+
+
+
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<img class="logo" src="img/logo_black.png" alt="">
+				</div>
+				<div class="modal-body">
+					<div class="modal-title">Sign In to Showroom</div>
+					<div class="social-links">
+						<a href="#" class="social-login btn-instagram">
+							<span class="social-icon"></span>
+							Continue with Instagram
+							<!--span class="user-avatar">
+								<img alt="" src="https://www.shareicon.net/avatar-male-person-user-old-mature-man-106425/data/128x128/2015/09/24/106425_man_512x512.png" />
+							</span-->
+						</a>
+						<a href="#" class="social-login btn-facebook">
+							<span class="social-icon"><i class="fab fa-facebook-square"></i></span>
+							Continue with Facebook
+							<!--span class="user-avatar">
+								<img alt="" src="https://www.shareicon.net/avatar-male-person-user-old-mature-man-106425/data/128x128/2015/09/24/106425_man_512x512.png" />
+							</span-->
+						</a>
+						<a href="#" class="social-login btn-google">
+							<span class="social-icon"></span>
+							Continue with Google
+							<!--span class="user-avatar">
+
+							</span-->
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					By logging in I agree to Showroom <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>
+				</div>
+			</div><!-- //.modal-content -->
+		</div><!-- //.modal-dialog -->
+	</div><!-- //.modal -->
 
 
 
