@@ -5400,11 +5400,11 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .event-items-section .grid-item .add-tag i { color: #fff; font-size: 1.4rem; }
 
-.event-items-section .grid-item .add-tag .delete-tag { color: #d8d8d8; float: right; font-family: "Roboto", sans-serif; font-size: 1.2rem; font-weight: 500; line-height: 1.8rem; }
+.event-items-section .grid-item .add-tag .delete-tag { color: #d8d8d8; float: right; font-family: "Roboto", sans-serif; font-size: 1.2rem; font-weight: 500; line-height: 1.8rem; margin-top: -.6rem; }
 
 .event-items-section .grid-item .add-tag .delete-tag:hover { color: #a4acb8; }
 
-.event-items-section .grid-item .add-tag .form { background-color: #fff; margin: 1.5rem 1rem; padding: .5rem 1rem 1rem; position: relative; width: 18rem; }
+.event-items-section .grid-item .add-tag .form { background-color: #fff; margin: 1.5rem 1rem; padding: 1rem; position: relative; width: 18rem; }
 
 .event-items-section .grid-item .add-tag .form:before { content: ''; height: 0; position: absolute; width: 0; z-index: 1; }
 
