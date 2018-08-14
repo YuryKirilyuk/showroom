@@ -43,6 +43,7 @@
         font-size: 1.2rem;
         font-weight: bold;
         line-height: 1.8rem;
+        opacity: .8;
         text-shadow: 0 0 5px #000;
         word-wrap: break-word;
         word-break: break-word;
@@ -87,163 +88,9 @@
     }//.grid-item-header
 
 
-    .add-tag {
-      align-items: center;
-      display: flex;
-      position: absolute;
-      i {
-        color: #fff;
-        font-size: 1.4rem;
-      }
-      .delete-tag {
-        color: #d8d8d8;
-        float: right;
-        font-family: $custom-font-family;
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 1.8rem;
-        margin-top: -.6rem;
-        &:hover {color: $grey;}
-      }
-      .form {
-        background-color: #fff;
-        margin: 1.5rem 1rem;
-        padding: 1rem;
-        position: relative;
-        width: 18rem;
-        &:before {
-          content: '';
-          height: 0;
-          position: absolute;
-          width: 0;
-          z-index: 1;
-        }
-        input {
-          height: 20px;
-          border-radius: 4px;
-          border: solid 1px #ddd;
-          font-size: 1rem;
-          font-style: italic;
-          margin-bottom: 6px;
-          &:last-child {margin: 0;}
-        }
-      }//form
-      &.tag-left {
-        .form:before {
-          border-right: 7px solid #fff;
-          border-top: 7px solid transparent;
-          border-bottom: 7px solid transparent;
-          left: -7px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-      }//&.tag-left
-      &.tag-right {
-        flex-direction: row-reverse;
-        .form:before {
-          border-left: 7px solid #fff;
-          border-top: 7px solid transparent;
-          border-bottom: 7px solid transparent;
-          right: -7px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-      }//&.tag-right
-      &.tag-top {
-        flex-direction: column;
-        .form:before {
-          border-bottom: 7px solid #fff;
-          border-left: 7px solid transparent;
-          border-right: 7px solid transparent;
-          top: -7px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      }//&.tag-top
-      &.tag-bottom {
-        flex-direction: column-reverse;
-        .form:before {
-          border-top: 7px solid #fff;
-          border-left: 7px solid transparent;
-          border-right: 7px solid transparent;
-          bottom: -7px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      }
-    }//.adding-tags
-
-
-
     .grid-item-image {
       //min-height: 27.5rem;
       position: relative;
-
-      .item-tag {
-        background: rgba(255,255,255,.9);
-        bottom: 1.2rem;
-        border-radius: 3rem;
-        color: transparent;
-        font-size: 1.2rem;
-        font-weight: 600;
-        height: 3rem;
-        left: 1.2rem;
-        line-height: 3rem;
-        max-width: 3rem;
-        padding: 0 .9rem;
-        position: absolute;
-        text-align: center;
-        transition: all .6s;
-        //width: 3rem;
-        white-space: nowrap;
-        z-index: 1;
-        &:hover {
-          border-radius: 3rem;
-          color: #5f5f5f;
-          max-width: 100%;
-          padding: 0 1.5rem;
-          width: auto;
-          i {
-            font-size: 1.7rem;
-            margin-right: 3px;
-          }
-          //span {width: auto;}
-        }//&.show
-        i {
-          color: #909090;
-          font-size: 1.2rem;
-          transition: all .3s;
-          vertical-align: middle;
-        }
-        span {
-          display: inline-block;
-          line-height: inherit;
-          overflow: hidden;
-          //transition: all .3s;
-          vertical-align: middle;
-          //width: 0;
-        }
-        &.has-tags {
-          &:before {
-            background: $red;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            color: #fff;
-            content: attr(data-tags);
-            font-family: $custom-font-family;
-            font-size: 11px;
-            font-weight: normal;
-            height: 2rem;
-            line-height: 1.8rem;
-            position: absolute;
-            right: -1rem;
-            text-align: center;
-            top: -1rem;
-            width: 2rem;
-          }
-        }//&.has-tags
-      }//.item-tag
-
 
     }//.grid-item-image
 

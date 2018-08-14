@@ -74,6 +74,10 @@ $(function(){
         fitWidth: true
     });
 
+    $('.has-tags').on('click', function(){
+        $(this).parent().toggleClass('show-tags');
+    });
+
 
 
 });
