@@ -25,7 +25,8 @@
     margin-bottom: 1rem;
     min-width: 11rem;
     opacity: 0;
-    padding: .3rem .8rem;
+    overflow: hidden;
+    padding: .3rem 3rem .3rem .8rem;
     position: absolute;
     text-align: left;
     transform: translateX(-50%);
@@ -51,6 +52,22 @@
   .price {
     color: #666;
     font-size: 1rem;
+  }
+  .product-link {
+    align-items: center;
+    bottom: 0;
+    color: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 3rem;
+    &:hover {
+      background: #eee;
+      color: $black;
+    }
   }
   .fa-tag {
     color: #fff;
