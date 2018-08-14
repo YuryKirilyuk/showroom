@@ -193,8 +193,8 @@
         padding: 0 .9rem;
         position: absolute;
         text-align: center;
-        transition: all .3s;
-        width: 3rem;
+        transition: all .6s;
+        //width: 3rem;
         white-space: nowrap;
         z-index: 1;
         &:hover {
@@ -207,19 +207,21 @@
             font-size: 1.7rem;
             margin-right: 3px;
           }
-          span {width: auto;}
+          //span {width: auto;}
         }//&.show
         i {
           color: #909090;
           font-size: 1.2rem;
+          transition: all .3s;
           vertical-align: middle;
         }
         span {
           display: inline-block;
-          overflow: hidden;
-          width: 0;
           line-height: inherit;
+          overflow: hidden;
+          //transition: all .3s;
           vertical-align: middle;
+          //width: 0;
         }
         &.has-tags {
           &:before {
