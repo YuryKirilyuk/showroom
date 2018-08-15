@@ -88,10 +88,10 @@
   .delete-tag {
     color: #d8d8d8;
     float: right;
-    font-family: $custom-font-family;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.8rem;
+    margin-bottom: .5rem;
     margin-top: -.6rem;
     &:hover {color: $grey;}
   }
@@ -116,6 +116,7 @@
       font-style: italic;
       margin-bottom: 6px;
       transition: $default-transition;
+      &:first-child {padding-right: 3rem;}
       &:last-child {margin: 0;}
     }
   }//form
@@ -172,9 +173,9 @@
     position: absolute;
     right: 15px;
     text-align: center;
-    top: 24px;
+    top: 29px;
     width: 2.5rem;
-    &:hover {color: $black;}
+    &:hover {color: $grey;}
     .fa-link {
       transform: rotateZ(45deg);
     }
