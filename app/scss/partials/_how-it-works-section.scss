@@ -32,7 +32,8 @@
     text-align: center;
     .item-title {
       color: #343f4b;
-      margin-bottom: 2.1rem;
+      line-height: normal;
+      margin-bottom: 2rem;
       @media screen and (max-width: 425px) {
         line-height: 3rem;
         margin-bottom: 1.5rem;
