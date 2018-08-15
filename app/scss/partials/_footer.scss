@@ -26,6 +26,7 @@ footer{
 		}
 		@media screen and (max-width: 374px) {
 			margin-bottom: 0;
+			margin-top: 0;
 			flex-shrink: 0;
 		}
 	}
@@ -46,6 +47,11 @@ footer{
 		.col-md-3 {
 			width: 18%;
 		}
+	}
+
+
+	@media screen and (max-width: 320px) {
+		//padding: 0 0 1rem;
 	}
 
 
@@ -77,9 +83,22 @@ footer{
 	@media screen and (max-width: 991px) {
 		margin-left: 3rem;
 	}
+	@media screen and (max-width: 320px) {
+		margin-left: 1rem;
+	}
 }
 .widget {
 	margin-bottom: 3rem;
+	@media screen and (max-width: 320px) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		&:first-child {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+		}
+	}
 	&-title {
 		color: #fff;
 		font-size: 1.6rem;

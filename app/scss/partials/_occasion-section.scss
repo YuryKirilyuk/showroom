@@ -32,7 +32,7 @@
     }
     .col-xs-6 {
       max-width: 17rem;
-      padding: 0;
+      padding: 0 .5rem;
     }
   }//@media screen and (max-width: 375px)
 
@@ -51,7 +51,7 @@
     transform: translateY(-5px);
   }
   @media screen and (max-width: 425px) {
-    border-radius: 5px;
+    //border-radius: 5px;
     margin-bottom: 1.5rem;
   }
   .occasion-image {
