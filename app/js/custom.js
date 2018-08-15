@@ -78,7 +78,9 @@ $(function(){
         $(this).parent().toggleClass('show-tags');
     });
 
-
+    $('.link-button').on('click', function(){
+        $(this).parent().find('.url-link').toggleClass('show');
+    });
 
 });
 
