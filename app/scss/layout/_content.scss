@@ -59,7 +59,7 @@ p {
 	height: 380px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	padding-top: $headerHeight;
 	@media screen and (max-width: 375px) {
 		padding-top: $headerHeightMobile;
