@@ -13,7 +13,7 @@
     transition: all .3s;
     width: 325px;
     &:hover {
-      background: #fff;
+      background: darken(#f6f6f6, 5%);
     }
 
     .grid-item-header {
@@ -25,6 +25,9 @@
       padding: 1rem 1.2rem;
       position: absolute;
       top: 0;
+      &:hover {
+        .user-name {opacity: 1;}
+      }
       .user-avatar {
         border-radius: 50%;
         box-shadow: 0 0 15px 0px rgba(0,0,0,.3);
@@ -37,7 +40,7 @@
           color: #d8d8d8;
           font-size: 3rem;
         }
-      }
+      }//.user-avatar
       .user-name {
         color: #fff;
         font-size: 1.2rem;

@@ -227,6 +227,9 @@
       text-align: center;
       top: -1rem;
       width: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     > span {display: none;}
   }//&.has-tags
