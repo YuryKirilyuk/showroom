@@ -5268,7 +5268,7 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .add-tag.tag-bottom .form:before { border-top: 7px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent; bottom: -7px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
-.add-tag .link-button { color: #d8d8d8; font-size: 1.5rem; display: block; height: 1.8rem; position: absolute; right: 15px; text-align: center; top: 29px; width: 2.5rem; }
+.add-tag .link-button { color: #d8d8d8; cursor: pointer; font-size: 1.5rem; display: block; height: 1.8rem; position: absolute; right: 15px; text-align: center; top: 29px; width: 2.5rem; }
 
 .add-tag .link-button:hover { color: #a4acb8; }
 
