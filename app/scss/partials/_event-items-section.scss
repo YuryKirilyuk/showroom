@@ -118,15 +118,17 @@
 
     .grid-item-footer {
       align-items: center;
-      //background: #fff;
       color: #5f5f5f;
       display: flex;
-      font-family: $custom-font-family;
+      //font-family: $custom-font-family;
       font-size: 1.4rem;
       line-height: 1.8rem;
       min-height: 6rem;
-      padding: 1.7rem 1.6rem;
+      padding: 1.7rem 1.6rem 0;
       .likes {
+        align-items: center;
+        display: flex;
+        margin-left: -1.6rem;
         min-width: 8rem;
         padding-right: 1rem;
         i {
@@ -154,6 +156,23 @@
 
 
 
-
-
 }//.event-items-section
+
+
+
+.heart {
+  background-image:url( '../img/web_heart_animation.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  cursor: pointer;
+  height: 45px;
+  margin-right: -.5rem;
+  transform: scale(1.5);
+  width: 60px;
+  &.like {background-position: right;}
+}
+
+.is_animating {
+  animation: heart-burst .8s steps(28) 1;
+}
