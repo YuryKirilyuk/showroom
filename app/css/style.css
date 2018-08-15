@@ -5493,7 +5493,7 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .event-items-section .grid { margin: auto; }
 
-.event-items-section .grid-item { border-radius: 5px; margin-bottom: 2rem; padding: 1rem; -webkit-transition: all .3s; transition: all .3s; width: 325px; }
+.event-items-section .grid-item { border-radius: 5px; margin-bottom: .5rem; padding: 1rem; -webkit-transition: all .3s; transition: all .3s; width: 325px; }
 
 .event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.05); }
 
