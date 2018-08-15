@@ -24,27 +24,34 @@
     }
 
     .grid-item-header {
-      align-items: center;
       background: transparent;
-      display: flex;
       left: 0;
       min-height: 4rem;
       padding: 1rem 1.2rem;
       position: absolute;
       top: 0;
-      &:hover {
-        .user-name {opacity: 1;}
+      a {
+        align-items: center;
+        display: flex;
+        &:hover {
+          .user-name {opacity: 1;}
+        }
       }
       .user-avatar {
+        align-items: center;
+        background: #ccc;
+        border: 1px solid #ccc;
         border-radius: 50%;
-        box-shadow: 0 0 15px 0px rgba(0,0,0,.3);
+        box-shadow: 0 0 50px 0px rgba(0,0,0,.3);
+        display: flex;
         height: 3rem;
+        justify-content: center;
         flex-shrink: 0;
         margin-right: 1rem;
         overflow: hidden;
         width: 3rem;
         .fa {
-          color: #d8d8d8;
+          color: #f5f5f5;
           font-size: 3rem;
         }
       }//.user-avatar

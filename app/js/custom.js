@@ -69,7 +69,7 @@ $(function(){
         // options
         itemSelector: '.grid-item',
         columnWidth: 325,
-        gutter: 20,
+        gutter: 10,
         horizontalOrder: true,
         fitWidth: true
     });
