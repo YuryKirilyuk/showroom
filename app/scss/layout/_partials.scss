@@ -35,7 +35,11 @@ h2.section-title {
 }
 
 .logo {
-	width: 11.4rem;
+	display: block;
+	//margin-top: .5rem;
+	margin-top: .7rem;
+	//width: 11.4rem;
+	width: 10rem;
 	a {
 		display: block;
 	}

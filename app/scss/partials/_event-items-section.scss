@@ -1,5 +1,9 @@
 .event-items-section {
   padding: 5rem 2rem 2rem;
+  @media screen and (max-width: 320px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .grid {
     margin: auto;
@@ -14,6 +18,9 @@
     width: 325px;
     &:hover {
       background: darken(#f6f6f6, 5%);
+    }
+    @media screen and (max-width: 320px) {
+      width: 320px;
     }
 
     .grid-item-header {
