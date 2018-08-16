@@ -12,13 +12,14 @@
   }
 
   .grid-item {
+    background: rgba(0, 0, 0, .025);
     border-radius: 5px;
-    margin-bottom: .5rem;
+    margin-bottom: .8rem;
     padding: 1rem;
     transition: all .3s;
     width: 325px;
     &:hover {
-      background: rgba(0, 0, 0, .05);
+      background: rgba(0, 0, 0, .06);
     }
     @media screen and (max-width: 320px) {
       width: 320px;

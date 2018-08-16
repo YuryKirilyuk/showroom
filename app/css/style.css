@@ -5413,6 +5413,8 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 425px) { .contact-section { padding: .3rem 0 8rem; } }
 
+.contact-section .container { max-width: 98rem; }
+
 .contact-section .section-title { line-height: 3.5rem; margin-bottom: 1rem; }
 
 @media screen and (max-width: 425px) { .contact-section .section-title br { display: none; } }
@@ -5429,9 +5431,11 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .contact-section .contact-title { color: #666; font-size: 1.4rem; font-weight: 600; line-height: 3rem; margin-bottom: 2.7rem; margin-top: 3.5rem; }
 
-.contact-section .contact-icon { -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; height: 3rem; margin-right: 2rem; text-align: center; width: 3rem; }
+.contact-section .contact-icon { -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; height: 3rem; margin-right: 2rem; padding-top: 4px; text-align: center; width: 3rem; }
 
-.contact-section .contact-phone, .contact-section .contact-email, .contact-section .contact-address { color: #666; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 1.4rem; line-height: 3rem; }
+.contact-section .contact-phone, .contact-section .contact-email, .contact-section .contact-address { color: #666; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 1.4rem; font-weight: 600; line-height: 3rem; margin-bottom: 1.8rem; }
+
+.contact-section .contact-phone a:hover, .contact-section .contact-email a:hover, .contact-section .contact-address a:hover { color: #1f2d3d; }
 
 .text-section { padding: 2.3rem 0 5rem; text-align: center; }
 
@@ -5521,9 +5525,9 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .event-items-section .grid { opacity: 0; margin: auto; }
 
-.event-items-section .grid-item { border-radius: 5px; margin-bottom: .5rem; padding: 1rem; -webkit-transition: all .3s; transition: all .3s; width: 325px; }
+.event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: .8rem; padding: 1rem; -webkit-transition: all .3s; transition: all .3s; width: 325px; }
 
-.event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.05); }
+.event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.06); }
 
 @media screen and (max-width: 320px) { .event-items-section .grid-item { width: 320px; } }
 
