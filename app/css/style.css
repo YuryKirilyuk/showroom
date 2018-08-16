@@ -5158,7 +5158,7 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .form-group .form-control:not(textarea), .form-group input[type="text"]:not(textarea), .form-group input[type="email"]:not(textarea), .form-group textarea[class*="form-control"]:not(textarea) { height: 5rem; }
 
-.form-group input[type="text"], .form-group input[type="email"] { color: #343f4b; font-weight: 600; -webkit-transition: none !important; transition: none !important; }
+.form-group input[type="text"], .form-group input[type="email"] { color: #1f2d3d; font-weight: 600; -webkit-transition: none !important; transition: none !important; }
 
 .form-group input[type="text"]::-webkit-input-placeholder, .form-group input[type="email"]::-webkit-input-placeholder { color: #ccc; font-weight: normal; }
 
@@ -5170,9 +5170,9 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .form-group input:focus, .form-group textarea:focus { border-color: #ccc !important; box-shadow: none !important; outline: none !important; }
 
-.form-group input:-webkit-autofill { -webkit-box-shadow: inset 0 0 0 50px #fff !important; -webkit-text-fill-color: #343f4b !important; color: #343f4b !important; }
+.form-group input:-webkit-autofill { -webkit-box-shadow: inset 0 0 0 50px #fff !important; -webkit-text-fill-color: #1f2d3d !important; color: #1f2d3d !important; }
 
-textarea[class*="form-control"] { color: #343f4b; font-weight: 600; }
+textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .modal { text-align: center; }
 
@@ -5539,15 +5539,17 @@ textarea[class*="form-control"] { color: #343f4b; font-weight: 600; }
 
 .event-items-section .grid-item .grid-item-image { position: relative; }
 
-.event-items-section .grid-item .grid-item-footer { color: #5f5f5f; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 1.4rem; line-height: 1.8rem; min-height: 4rem; padding: 0 1rem 0; }
+.event-items-section .grid-item .grid-item-footer { color: #5f5f5f; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 1.4rem; font-weight: bold; line-height: 1.8rem; min-height: 4rem; padding: 0 1rem 0; }
 
 .event-items-section .grid-item .grid-item-footer .likes { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-left: -1.6rem; margin-right: -1.5rem; min-width: 8rem; padding-right: .5rem; }
 
 .event-items-section .grid-item .grid-item-footer .likes i { color: #F64135; font-size: 2.6rem; vertical-align: middle; }
 
-.event-items-section .grid-item .grid-item-footer .wear { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding-top: 1.2rem; }
+.event-items-section .grid-item .grid-item-footer .wear { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding-top: 1.2rem; position: relative; z-index: 1; }
 
 .event-items-section .grid-item .grid-item-footer .wear i { color: #F64135; font-size: 1.8rem; }
+
+@media screen and (max-width: 375px) { .event-items-section .grid-item .grid-item-footer .wear span { display: none; } }
 
 .event-items-section .grid-item .grid-item-footer .share { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #d8d8d8; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 2rem; margin-left: auto; }
 
