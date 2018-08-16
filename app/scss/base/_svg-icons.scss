@@ -1,0 +1,31 @@
+svg.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+//CONTACT US PAGE
+.contact-phone {
+  .icon-phone {
+    fill: #d8d8d8;
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+}
+.contact-email {
+  .icon-envelope {
+    fill: #d8d8d8;
+    height: 1.8rem;
+    width: 2.1rem;
+  }
+}
+.contact-address {
+  .icon-location {
+    fill: #d8d8d8;
+    height: 2rem;
+    width: 2.4rem;
+  }
+}

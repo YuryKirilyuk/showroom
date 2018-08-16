@@ -11,6 +11,7 @@
 
 //@import "base/reset";
 @import "base/fonts";
+@import "base/svg-icons";
 
 
 //@import "layout/grid";
@@ -35,3 +36,5 @@
 @import "partials/community-section";
 @import "partials/event-info-section";
 @import "partials/event-items-section";
+
+@import 'utils/utils';

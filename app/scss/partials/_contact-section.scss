@@ -38,4 +38,45 @@
       margin-top: 1rem;
     }
   }
+
+
+
+
+
+
+  //CONTACT US PAGE
+  .contact-title {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 2.7rem;
+    margin-top: 3.5rem;
+  }
+  .contact-icon {
+    flex-shrink: 0;
+    height: 3rem;
+    margin-right: 2rem;
+    text-align: center;
+    width: 3rem;
+  }
+  .contact-phone {
+    color: #666;
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+  .contact-email {
+    @extend .contact-phone;
+  }
+  .contact-address {
+    @extend .contact-phone;
+  }
+
+
+
+
+
+
+
 }//.contact-section
