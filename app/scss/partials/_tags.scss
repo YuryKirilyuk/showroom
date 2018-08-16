@@ -208,9 +208,13 @@
   position: absolute;
   text-align: center;
   transition: all .6s;
-  //width: 3rem;
   white-space: nowrap;
   z-index: 1;
+  @media screen and (max-width: 375px) {
+    bottom: 1rem;
+    font-size: .9rem;
+    left: .5rem;
+  }
   &:not(.has-tags):hover {
     border-radius: 3rem;
     color: #5f5f5f;
@@ -218,9 +222,15 @@
     max-width: 100%;
     padding: 0 1.5rem;
     width: auto;
+    @media screen and (max-width: 375px) {
+      padding: 0 1rem;
+    }
     i {
       font-size: 1.7rem;
       margin-right: 3px;
+      @media screen and (max-width: 375px) {
+        font-size: 1.2rem;
+      }
     }
     //span {width: auto;}
   }//&:not(.has-tags):hover

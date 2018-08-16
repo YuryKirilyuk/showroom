@@ -3,7 +3,7 @@ $( window ).load(function() {
     $('.grid').masonry({
         // options
         itemSelector: '.grid-item',
-        columnWidth: 325,
+        //columnWidth: 325,
         gutter: 5,
         horizontalOrder: true,
         fitWidth: true

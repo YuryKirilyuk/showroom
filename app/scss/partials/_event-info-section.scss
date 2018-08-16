@@ -5,6 +5,13 @@
     height: auto;
   }
 
+  .col-md-12 {
+    @media screen and (max-width: 320px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
   //when there is no hero-image on the page
   &:not(.has-image) {
     .page-title {
@@ -25,13 +32,11 @@
 
 
   .section-content {
-    //font-family: $custom-font-family;
     line-height: 3rem;
     max-width: 80rem;
     margin: auto;
   }
   .subtitle {
-    //border-bottom: 1px solid #d8d8d8;
     font-size: 1.6rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
@@ -64,6 +69,9 @@
       li {
         display: inline-block;
         margin: 0 2rem;
+        @media screen and (max-width: 375px) {
+          margin: 0 .5rem;
+        }
       }
       a {font-weight: 600;}
       a:hover {color: #c2c2c2;}
