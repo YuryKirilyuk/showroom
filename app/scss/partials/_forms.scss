@@ -5,7 +5,7 @@
   }
   label {
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     display: block;
     line-height: 2.5;
@@ -18,11 +18,35 @@
       height: 5rem;
     }
   }
+
   input[type="text"],
   input[type="email"] {
+    @include placeholder {
+      color: #ddd;
+      font-weight: normal;
+    }
     @extend .form-control;
+    color: #343f4b;
+    font-weight: 600;
+    transition: none !important;
   }
+
+  input:focus,
+  textarea:focus {
+    border-color: #ccc !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+    -webkit-text-fill-color: #343f4b !important;
+    color: #343f4b !important;
+  }
+
 }//.form-group
+
 textarea[class*="form-control"] {
   @extend .form-control;
+  font-weight: 600;
 }
