@@ -5549,7 +5549,7 @@ textarea[class*="form-control"] { color: #343f4b; font-weight: 600; }
 
 .event-items-section .grid-item .grid-item-footer .wear i { color: #F64135; font-size: 1.8rem; }
 
-.event-items-section .grid-item .grid-item-footer .share { color: #d8d8d8; font-size: 2rem; margin-left: auto; }
+.event-items-section .grid-item .grid-item-footer .share { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #d8d8d8; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 2rem; margin-left: auto; }
 
 .event-items-section .grid-item .grid-item-footer .share:hover { color: #1f2d3d; }
 

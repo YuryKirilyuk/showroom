@@ -151,7 +151,9 @@
         }
       }//.wear
       .share {
+        align-items: center;
         color: #d8d8d8;
+        display: flex;
         font-size: 2rem;
         margin-left: auto;
         &:hover {color: $black;}
