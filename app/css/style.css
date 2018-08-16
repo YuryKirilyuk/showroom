@@ -5160,13 +5160,13 @@ nav.navbar-transparent.bootsnav .navbar-toggle { color: #fff; }
 
 .form-group input[type="text"], .form-group input[type="email"] { color: #343f4b; font-weight: 600; -webkit-transition: none !important; transition: none !important; }
 
-.form-group input[type="text"]::-webkit-input-placeholder, .form-group input[type="email"]::-webkit-input-placeholder { color: #ddd; font-weight: normal; }
+.form-group input[type="text"]::-webkit-input-placeholder, .form-group input[type="email"]::-webkit-input-placeholder { color: #ccc; font-weight: normal; }
 
-.form-group input[type="text"]:-moz-placeholder, .form-group input[type="email"]:-moz-placeholder { color: #ddd; font-weight: normal; }
+.form-group input[type="text"]:-moz-placeholder, .form-group input[type="email"]:-moz-placeholder { color: #ccc; font-weight: normal; }
 
-.form-group input[type="text"]::-moz-placeholder, .form-group input[type="email"]::-moz-placeholder { color: #ddd; font-weight: normal; }
+.form-group input[type="text"]::-moz-placeholder, .form-group input[type="email"]::-moz-placeholder { color: #ccc; font-weight: normal; }
 
-.form-group input[type="text"]:-ms-input-placeholder, .form-group input[type="email"]:-ms-input-placeholder { color: #ddd; font-weight: normal; }
+.form-group input[type="text"]:-ms-input-placeholder, .form-group input[type="email"]:-ms-input-placeholder { color: #ccc; font-weight: normal; }
 
 .form-group input:focus, .form-group textarea:focus { border-color: #ccc !important; box-shadow: none !important; outline: none !important; }
 

@@ -22,7 +22,7 @@
   input[type="text"],
   input[type="email"] {
     @include placeholder {
-      color: #ddd;
+      color: #ccc;
       font-weight: normal;
     }
     @extend .form-control;
