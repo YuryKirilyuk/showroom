@@ -6,7 +6,7 @@
   label {
     color: #666;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 600;
     display: block;
     line-height: 2.5;
     margin-bottom: 0;
@@ -48,5 +48,6 @@
 
 textarea[class*="form-control"] {
   @extend .form-control;
+  color: #343f4b;
   font-weight: 600;
 }
