@@ -1,3 +1,17 @@
+$( window ).load(function() {
+
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 325,
+        gutter: 5,
+        horizontalOrder: true,
+        fitWidth: true
+    });
+    $('.grid').css('opacity','1');
+
+});
+
 $(function(){
 
 
@@ -64,7 +78,7 @@ $(function(){
 
 
 
-
+/*
     $('.grid').masonry({
         // options
         itemSelector: '.grid-item',
@@ -73,7 +87,7 @@ $(function(){
         horizontalOrder: true,
         fitWidth: true
     });
-
+*/
     $('.has-tags').on('click', function(){
         $(this).parent().toggleClass('show-tags');
     });
@@ -95,17 +109,6 @@ $(function(){
     $(".heart").on('animationend', function(){
         $(this).toggleClass('is_animating');
     });
-
-
-
-
-
-
-
-
-
-
-
 
 
 
