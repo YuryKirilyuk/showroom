@@ -8,7 +8,7 @@ footer{
 		padding-top: 3rem;
 	}
 	@media screen and (max-width: 425px) {
-		font-family: $custom-font-family;
+		//font-family: $custom-font-family;
 		font-weight: 500;
 	}
 	a{
@@ -27,7 +27,7 @@ footer{
 		@media screen and (max-width: 374px) {
 			margin-bottom: 0;
 			margin-top: 0;
-			flex-shrink: 0;
+			flex: 1;
 		}
 	}
 }//footer
@@ -64,7 +64,7 @@ footer{
 }//.footer-main
 
 .footer-lower {
-	font-family: $base-font-family;
+	ont-family: $base-font-family;
 	font-size: 1.4rem;
 	font-weight: 600;
 	line-height: 1.93;
@@ -83,28 +83,33 @@ footer{
 	@media screen and (max-width: 991px) {
 		margin-left: 3rem;
 	}
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 375px) {
 		margin-left: 1rem;
 	}
-}
+}//.footer-copyright
+
 .widget {
 	margin-bottom: 3rem;
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 375px) {
+		margin-bottom: 1.2rem !important;
 		padding-left: 1rem;
 		padding-right: 1rem;
 		&:first-child {
 			align-items: center;
 			display: flex;
 			justify-content: space-between;
-			padding: 0;
+			padding: 0 0 2rem;
 		}
-	}
+	}//@media screen and (max-width: 320px)
 	&-title {
 		color: #fff;
 		font-size: 1.6rem;
 		line-height: 3rem;
 		margin-bottom: 2.1rem;
 		margin-top: 0;
+		@media screen and (max-width: 425px){
+			margin-bottom: 1.4rem;
+		}
 	}
 
 	ul {

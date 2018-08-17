@@ -26,13 +26,19 @@
       background: rgba(0, 0, 0, .06);
     }
     @media screen and (max-width: 425px) {
-      padding: .5rem;
+      padding: .8rem;
       width: 200px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 185px;
     }
     @media screen and (max-width: 375px) {
       width: 175px;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 360px) {
+      width: 165px;
+    }
+    @media screen and (max-width: 330px) {
       width: 150px;
     }
 
