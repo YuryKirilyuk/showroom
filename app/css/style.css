@@ -4873,7 +4873,9 @@ svg.icon { display: inline-block; width: 1em; height: 1em; stroke-width: 0; stro
 
 .contact-address .icon-location { fill: #d8d8d8; height: 2rem; width: 2.4rem; }
 
-svg.icon-wear { fill: #F64135; height: 2.3rem; width: 2rem; }
+svg.icon-wear { fill: #f74236; height: 2.3rem; width: 2rem; }
+
+svg.icon-heart { fill: #f74236; height: 3rem; width: 3rem; }
 
 html, body { height: 100%; }
 
@@ -4914,14 +4916,101 @@ img { height: auto; max-width: 100%; }
 
 .clearfix:after { content: ""; display: table; clear: both; }
 
-@-webkit-keyframes scroll { from { background-position: left; }
-  to { background-position: right; } }
+@-webkit-keyframes heartPulse { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(1.5); transform: scale(1.5); } }
 
-@-webkit-keyframes heart-burst { from { background-position: left; }
-  to { background-position: right; } }
+@keyframes heartPulse { 0% { -webkit-transform: scale(1); transform: scale(1); }
+  50% { -webkit-transform: scale(1.5); transform: scale(1.5); } }
 
-@keyframes heart-burst { from { background-position: left; }
-  to { background-position: right; } }
+@-webkit-keyframes heartUnlike { 50% { -webkit-transform: scale(0.75); transform: scale(0.75); } }
+
+@keyframes heartUnlike { 50% { -webkit-transform: scale(0.75); transform: scale(0.75); } }
+
+@-webkit-keyframes heartFloatMain-1 { 0% { opacity: 0;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { opacity: 1;
+    -webkit-transform: translate(0, -25px) rotate(-20deg);
+            transform: translate(0, -25px) rotate(-20deg); } }
+
+@keyframes heartFloatMain-1 { 0% { opacity: 0;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { opacity: 1;
+    -webkit-transform: translate(0, -25px) rotate(-20deg);
+            transform: translate(0, -25px) rotate(-20deg); } }
+
+@-webkit-keyframes heartFloatMain-2 { 0% { opacity: 0;
+    -webkit-transform: translate(0) rotate(0) scale(0);
+            transform: translate(0) rotate(0) scale(0); }
+  50% { opacity: .9;
+    -webkit-transform: translate(-10px, -38px) rotate(25deg) scale(1);
+            transform: translate(-10px, -38px) rotate(25deg) scale(1); } }
+
+@keyframes heartFloatMain-2 { 0% { opacity: 0;
+    -webkit-transform: translate(0) rotate(0) scale(0);
+            transform: translate(0) rotate(0) scale(0); }
+  50% { opacity: .9;
+    -webkit-transform: translate(-10px, -38px) rotate(25deg) scale(1);
+            transform: translate(-10px, -38px) rotate(25deg) scale(1); } }
+
+@-webkit-keyframes heartFloatSub-1 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(13px, -13px) rotate(30deg);
+            transform: translate(13px, -13px) rotate(30deg); } }
+
+@keyframes heartFloatSub-1 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(13px, -13px) rotate(30deg);
+            transform: translate(13px, -13px) rotate(30deg); } }
+
+@-webkit-keyframes heartFloatSub-2 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(18px, -10px) rotate(55deg);
+            transform: translate(18px, -10px) rotate(55deg); } }
+
+@keyframes heartFloatSub-2 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(18px, -10px) rotate(55deg);
+            transform: translate(18px, -10px) rotate(55deg); } }
+
+@-webkit-keyframes heartFloatSub-3 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(-10px, -10px) rotate(-40deg);
+            transform: translate(-10px, -10px) rotate(-40deg); }
+  100% { -webkit-transform: translate(-50px, 0); transform: translate(-50px, 0); } }
+
+@keyframes heartFloatSub-3 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(-10px, -10px) rotate(-40deg);
+            transform: translate(-10px, -10px) rotate(-40deg); }
+  100% { -webkit-transform: translate(-50px, 0); transform: translate(-50px, 0); } }
+
+@-webkit-keyframes heartFloatSub-4 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(2px, -18px) rotate(-25deg);
+            transform: translate(2px, -18px) rotate(-25deg); } }
+
+@keyframes heartFloatSub-4 { 0% { visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0); }
+  50% { visibility: visible;
+    -webkit-transform: translate(2px, -18px) rotate(-25deg);
+            transform: translate(2px, -18px) rotate(-25deg); } }
 
 @media screen and (min-width: 1200px) { .container { width: 1140px; } }
 
@@ -5559,6 +5648,8 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .event-items-section .grid-item .grid-item-header .user-avatar { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #ccc; border: 1px solid #ccc; border-radius: 50%; box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.3); display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 3rem; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; margin-right: .5rem; overflow: hidden; width: 3rem; }
 
+.event-items-section .grid-item .grid-item-header .user-avatar img { max-width: 3rem; }
+
 .event-items-section .grid-item .grid-item-header .user-avatar .fa { color: #f5f5f5; font-size: 3rem; }
 
 .event-items-section .grid-item .grid-item-header .user-name { color: #fff; font-size: 1.2rem; font-weight: bold; line-height: 1.8rem; opacity: .8; text-shadow: 0 0 5px #000; word-wrap: break-word; word-break: break-word; }
@@ -5579,15 +5670,15 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 375px) { .event-items-section .grid-item .grid-item-footer { padding: 0; } }
 
-.event-items-section .grid-item .grid-item-footer .likes { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-left: -1.6rem; margin-right: -1.5rem; min-width: 8rem; padding-right: .5rem; }
+.event-items-section .grid-item .grid-item-footer .likes { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-right: 1.5rem; min-width: 3rem; padding-top: .5rem; }
 
-.event-items-section .grid-item .grid-item-footer .likes i { color: #F64135; font-size: 2.6rem; vertical-align: middle; }
+.event-items-section .grid-item .grid-item-footer .likes i { color: #f74236; font-size: 2.6rem; vertical-align: middle; }
 
-.event-items-section .grid-item .grid-item-footer .wear { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding-top: .9rem; position: relative; z-index: 1; }
+.event-items-section .grid-item .grid-item-footer .wear { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding-top: .8rem; position: relative; z-index: 1; }
 
 @media screen and (max-width: 375px) { .event-items-section .grid-item .grid-item-footer .wear { padding-top: .7rem; } }
 
-.event-items-section .grid-item .grid-item-footer .wear i { color: #F64135; font-size: 1.8rem; }
+.event-items-section .grid-item .grid-item-footer .wear i { color: #f74236; font-size: 1.8rem; }
 
 @media screen and (max-width: 425px) { .event-items-section .grid-item .grid-item-footer .wear span { display: none; } }
 
@@ -5595,13 +5686,33 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .event-items-section .grid-item .grid-item-footer .share:hover { color: #1f2d3d; }
 
-.heart { background-image: url("../img/web_heart_animation.png"); background-position: left; background-repeat: no-repeat; background-size: 2900%; cursor: pointer; height: 4.5rem; margin-bottom: -.5rem; -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); width: 6rem; }
+.like-button { color: #878787; -webkit-filter: grayscale(100%); filter: grayscale(100%); position: relative; z-index: 99; }
 
-@media screen and (max-width: 375px) { .heart { height: 4rem; width: 5rem; } }
+.like-button.liked { color: #f74236; -webkit-filter: grayscale(0); filter: grayscale(0); }
 
-.heart.like { background-position: right; }
+.like-icon { width: 27px; height: 30px; display: inline-block; position: relative; font-size: 1.5rem; background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#FF6E6F" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; -webkit-animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
 
-.is_animating { -webkit-animation: heart-burst 0.8s steps(28) 1; animation: heart-burst 0.8s steps(28) 1; }
+.liked .like-icon { -webkit-animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon [class^="heart-animation-"] { background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#FF6E6F" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; display: block; position: absolute; top: 0; left: 0; width: 16px; height: 14px; opacity: 0; }
+
+.liked .like-icon [class^="heart-animation-"]::before, .liked .like-icon [class^="heart-animation-"]::after { content: ''; background: inherit; background-size: 100%; width: inherit; height: inherit; display: inherit; position: relative; top: inherit; left: inherit; opacity: 0; }
+
+.liked .like-icon .heart-animation-1 { -webkit-animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon .heart-animation-1::before, .liked .like-icon .heart-animation-1::after { width: 12px; height: 10px; visibility: hidden; }
+
+.liked .like-icon .heart-animation-1::before { opacity: .6; -webkit-animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon .heart-animation-1::after { -webkit-animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .75; }
+
+.liked .like-icon .heart-animation-2 { -webkit-animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon .heart-animation-2::before, .liked .like-icon .heart-animation-2::after { width: 10px; height: 8px; visibility: hidden; }
+
+.liked .like-icon .heart-animation-2::before { -webkit-animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .25; }
+
+.liked .like-icon .heart-animation-2::after { -webkit-animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .4; }
 
 .bg-w { background-color: #fff; }
 

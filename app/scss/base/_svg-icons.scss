@@ -31,7 +31,13 @@ svg.icon {
 }
 
 svg.icon-wear {
-  fill: #F64135;
+  fill: $icon-red;
   height: 2.3rem;
   width: 2rem;
+}
+
+svg.icon-heart {
+  fill: $icon-red;
+  height: 3rem;
+  width: 3rem;
 }

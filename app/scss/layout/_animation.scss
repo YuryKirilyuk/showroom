@@ -1,12 +1,77 @@
-@-webkit-keyframes scroll {
-    from {background-position: left;}
-    to { background-position: right;}
+@keyframes heartPulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
 }
-@-moz-keyframes scroll {
-    from {background-position: left;}
-    to { background-position: right;}
+
+@keyframes heartUnlike {
+    50% { transform: scale(.75) ; }
 }
-@keyframes heart-burst {
-    from {background-position: left;}
-    to { background-position: right;}
+
+@keyframes heartFloatMain-1 {
+    0% {
+        opacity: 0;
+        transform: translate(0) rotate(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, -25px) rotate(-20deg);
+    }
+}
+
+@keyframes heartFloatMain-2 {
+    0% {
+        opacity: 0;
+        transform: translate(0) rotate(0) scale(0);
+    }
+    50% {
+        opacity: .9;
+        transform: translate(-10px, -38px) rotate(25deg) scale(1);
+    }
+}
+
+@keyframes heartFloatSub-1 {
+    0% {
+        visibility: hidden;
+        transform: translate(0) rotate(0);
+    }
+    50% {
+        visibility: visible;
+        transform: translate(13px, -13px) rotate(30deg);
+    }
+}
+
+@keyframes heartFloatSub-2 {
+    0% {
+        visibility: hidden;
+        transform: translate(0) rotate(0);
+    }
+    50% {
+        visibility: visible;
+        transform: translate(18px, -10px) rotate(55deg);
+    }
+}
+
+@keyframes heartFloatSub-3 {
+    0% {
+        visibility: hidden;
+        transform: translate(0) rotate(0);
+    }
+    50% {
+        visibility: visible;
+        transform: translate(-10px, -10px) rotate(-40deg);
+    }
+    100% {
+        transform: translate(-50px, 0);
+    }
+}
+
+@keyframes heartFloatSub-4 {
+    0% {
+        visibility: hidden;
+        transform: translate(0) rotate(0);
+    }
+    50% {
+        visibility: visible;
+        transform: translate(2px, -18px) rotate(-25deg);
+    }
 }
