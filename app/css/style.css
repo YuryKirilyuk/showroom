@@ -5386,7 +5386,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .tag-container .fa-tag { color: #fff; font-size: 1.4rem; text-shadow: 0 0 30px #1f2d3d; }
 
-.add-tag { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: absolute; }
+.add-tag { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: absolute; z-index: 9; }
 
 .add-tag .fa-tag { color: #fff; font-size: 1.4rem; }
 
