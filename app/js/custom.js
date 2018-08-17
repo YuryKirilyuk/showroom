@@ -10,6 +10,8 @@ $( window ).load(function() {
     });
     $('.grid').css('opacity','1');
 
+
+
 });
 
 $(function(){
@@ -112,7 +114,21 @@ $(function(){
 
 
 
-
-
 });
 
+
+
+(function opacity(){
+
+    $('.icon-wear').each(function(){
+        var num = $(this).data('requests'),
+            op = 1;
+
+        if(num < 30) {op = .3;}
+        else if (num >= 30 && num < 50 ) {op = .5;}
+        else if (num >= 50 && num <= 99 ) {op = .7;}
+
+        $(this).css('opacity',op);
+    });
+
+}());

@@ -5539,7 +5539,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 375px) { .event-items-section .grid { width: 100%; } }
 
-.event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: .8rem; padding: 1rem; -webkit-transition: all .3s; transition: all .3s; width: 325px; }
+.event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: 1rem; padding: 1rem; -webkit-transition: all .3s; transition: all .3s; width: 325px; }
 
 .event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.06); }
 
