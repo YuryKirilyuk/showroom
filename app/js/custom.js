@@ -107,7 +107,7 @@ $(function(){
 });
 
 
-
+//opacity fo ivon-wear (events page)
 (function opacity(){
 
     $('.icon-wear').each(function(){

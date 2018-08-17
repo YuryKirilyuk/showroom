@@ -5121,6 +5121,36 @@ footer .logo { margin-bottom: 1.5rem; }
 
 .btn.btn-sm, input.btn-sm[type="submit"] { border-radius: 4px; font-size: 1rem; height: 2rem; line-height: 2rem; letter-spacing: 1.3px; padding: 0; width: 5rem; }
 
+.like-button { position: relative; z-index: 99; }
+
+.like-button.liked { color: #f74236; }
+
+.like-button.liked .like-icon { background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#f74236" fill-rule="evenodd"/></svg>') no-repeat center; }
+
+.like-icon { width: 27px; height: 30px; display: inline-block; position: relative; font-size: 1.5rem; background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#cccccc" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; -webkit-animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon { -webkit-animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon [class^="heart-animation-"] { background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#f74236" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; display: block; position: absolute; top: 0; left: 0; width: 16px; height: 14px; opacity: 0; }
+
+.liked .like-icon [class^="heart-animation-"]::before, .liked .like-icon [class^="heart-animation-"]::after { content: ''; background: inherit; background-size: 100%; width: inherit; height: inherit; display: inherit; position: relative; top: inherit; left: inherit; opacity: 0; }
+
+.liked .like-icon .heart-animation-1 { -webkit-animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon .heart-animation-1::before, .liked .like-icon .heart-animation-1::after { width: 12px; height: 10px; visibility: hidden; }
+
+.liked .like-icon .heart-animation-1::before { opacity: .6; -webkit-animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon .heart-animation-1::after { -webkit-animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .75; }
+
+.liked .like-icon .heart-animation-2 { -webkit-animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+
+.liked .like-icon .heart-animation-2::before, .liked .like-icon .heart-animation-2::after { width: 10px; height: 8px; visibility: hidden; }
+
+.liked .like-icon .heart-animation-2::before { -webkit-animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .25; }
+
+.liked .like-icon .heart-animation-2::after { -webkit-animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .4; }
+
 @media screen and (min-width: 1025px) { nav.bootsnav .container { height: 100%; left: 120px; padding: 0; position: absolute; right: 120px; top: 0; width: auto; }
   nav.bootsnav .container .login a { padding-right: 0; } }
 
@@ -5672,47 +5702,15 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .event-items-section .grid-item .grid-item-footer .likes { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-right: 1.5rem; min-width: 3rem; padding-top: .5rem; }
 
-.event-items-section .grid-item .grid-item-footer .likes i { color: #f74236; font-size: 2.6rem; vertical-align: middle; }
-
 .event-items-section .grid-item .grid-item-footer .wear { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding-top: .8rem; position: relative; z-index: 1; }
 
 @media screen and (max-width: 375px) { .event-items-section .grid-item .grid-item-footer .wear { padding-top: .7rem; } }
-
-.event-items-section .grid-item .grid-item-footer .wear i { color: #f74236; font-size: 1.8rem; }
 
 @media screen and (max-width: 425px) { .event-items-section .grid-item .grid-item-footer .wear span { display: none; } }
 
 .event-items-section .grid-item .grid-item-footer .share { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #d8d8d8; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 2rem; margin-left: auto; }
 
 .event-items-section .grid-item .grid-item-footer .share:hover { color: #1f2d3d; }
-
-.like-button { color: #878787; -webkit-filter: grayscale(100%); filter: grayscale(100%); position: relative; z-index: 99; }
-
-.like-button.liked { color: #f74236; -webkit-filter: grayscale(0); filter: grayscale(0); }
-
-.like-icon { width: 27px; height: 30px; display: inline-block; position: relative; font-size: 1.5rem; background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#FF6E6F" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; -webkit-animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
-
-.liked .like-icon { -webkit-animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
-
-.liked .like-icon [class^="heart-animation-"] { background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#FF6E6F" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; display: block; position: absolute; top: 0; left: 0; width: 16px; height: 14px; opacity: 0; }
-
-.liked .like-icon [class^="heart-animation-"]::before, .liked .like-icon [class^="heart-animation-"]::after { content: ''; background: inherit; background-size: 100%; width: inherit; height: inherit; display: inherit; position: relative; top: inherit; left: inherit; opacity: 0; }
-
-.liked .like-icon .heart-animation-1 { -webkit-animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
-
-.liked .like-icon .heart-animation-1::before, .liked .like-icon .heart-animation-1::after { width: 12px; height: 10px; visibility: hidden; }
-
-.liked .like-icon .heart-animation-1::before { opacity: .6; -webkit-animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
-
-.liked .like-icon .heart-animation-1::after { -webkit-animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .75; }
-
-.liked .like-icon .heart-animation-2 { -webkit-animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
-
-.liked .like-icon .heart-animation-2::before, .liked .like-icon .heart-animation-2::after { width: 10px; height: 8px; visibility: hidden; }
-
-.liked .like-icon .heart-animation-2::before { -webkit-animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .25; }
-
-.liked .like-icon .heart-animation-2::after { -webkit-animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; opacity: .4; }
 
 .bg-w { background-color: #fff; }
 
