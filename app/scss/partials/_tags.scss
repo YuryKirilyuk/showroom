@@ -172,14 +172,17 @@
     font-size: 1.5rem;
     display: block;
     height: 1.8rem;
+    padding: 2px 0;
     position: absolute;
-    right: 15px;
+    right: 12px;
     text-align: center;
-    top: 29px;
-    width: 2.5rem;
+    top: 28px;
+    width: 2.8rem;
     &:hover {color: $grey;}
-    .fa-link {
+    .icon-link {
+      height: 1.5rem;
       transform: rotateZ(45deg);
+      width: 3rem;
     }
   }//.link-button
   form .url-link:not(.show) {
