@@ -10,7 +10,7 @@
     opacity: 0;
     margin: auto;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
       width: 100%;
     }
   }
@@ -25,7 +25,7 @@
     &:hover {
       background: rgba(0, 0, 0, .06);
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 430px) {
       padding: .8rem;
       width: 200px;
     }

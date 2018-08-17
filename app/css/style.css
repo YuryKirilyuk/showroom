@@ -5088,7 +5088,7 @@ footer .logo { margin-bottom: 1.5rem; }
 
 .footer-main .col-xs-6 { float: none; display: inline-block; margin: 0 -3px; vertical-align: top; }
 
-.footer-lower { ont-family: "Open Sans", sans-serif; font-size: 1.4rem; font-weight: 600; line-height: 1.93; text-align: center; }
+.footer-lower { font-size: 1.4rem; font-weight: 600; line-height: 1.93; text-align: center; }
 
 .footer-lower .container { border-top: 1px solid; padding-bottom: .7rem; padding-top: .7rem; }
 
@@ -5658,13 +5658,13 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .event-items-section .grid { opacity: 0; margin: auto; }
 
-@media screen and (max-width: 375px) { .event-items-section .grid { width: 100%; } }
+@media screen and (max-width: 425px) { .event-items-section .grid { width: 100%; } }
 
 .event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: 1rem; padding: 1rem; -webkit-transition: all .3s; transition: all .3s; width: 325px; }
 
 .event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.06); }
 
-@media screen and (max-width: 425px) { .event-items-section .grid-item { padding: .8rem; width: 200px; } }
+@media screen and (max-width: 430px) { .event-items-section .grid-item { padding: .8rem; width: 200px; } }
 
 @media screen and (max-width: 400px) { .event-items-section .grid-item { width: 185px; } }
 
