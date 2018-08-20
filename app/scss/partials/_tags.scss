@@ -236,7 +236,7 @@
         font-size: 1.2rem;
       }
     }
-    //span {width: auto;}
+    span {display: inline-block;}
   }//&:not(.has-tags):hover
   i {
     color: #909090;
@@ -246,6 +246,7 @@
   }
   span {
     display: inline-block;
+    display: none;
     line-height: inherit;
     overflow: hidden;
     //transition: all .3s;
