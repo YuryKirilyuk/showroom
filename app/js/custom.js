@@ -4,15 +4,23 @@ $( window ).load(function() {
         // options
         itemSelector: '.grid-item',
         //columnWidth: 325,
+        //columnWidth: '.grid-sizer',
         gutter: 5,
         horizontalOrder: true,
+        //percentPosition: true,
         fitWidth: true
     });
+
     $('.grid').css('opacity','1');
 
-
-
 });
+
+
+window.addEventListener("orientationchange", function() {
+    location.reload();
+}, false);
+
+
 
 $(function(){
 

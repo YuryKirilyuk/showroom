@@ -23,10 +23,10 @@
     visibility: hidden;
     left: 45%;
     margin-bottom: 1rem;
-    min-width: 11rem;
+    min-width: 14rem;
     opacity: 0;
     //overflow: hidden;
-    padding: .3rem 3rem .3rem .8rem;
+    padding: .5rem 5rem .5rem .8rem;
     position: absolute;
     text-align: left;
     transform: translateX(-50%);
@@ -45,19 +45,28 @@
       right: 0;
       width: 0;
     }
-  }
+    &:after {
+      bottom: -2rem;
+      content: '';
+      height: 2rem;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }//.tag-content
   .name {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
   }
   .price {
-    color: #666;
-    font-size: 1rem;
+    //color: #666;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   .product-link {
     align-items: center;
     bottom: 0;
-    color: #d8d8d8;
+    color: #484F56;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -72,8 +81,9 @@
   }
   .fa-tag {
     color: #fff;
-    font-size: 1.4rem;
-    text-shadow: 0 0 30px $black;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 20px #000, -1px -1px 20px #000;
+    transform: rotateZ(90deg) translateY(10px) translateX(5px);
   }
 }//.tag-container
 
@@ -204,11 +214,11 @@
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: 600;
-  height: 3rem;
+  height: 2.7rem;
   left: 1.2rem;
-  line-height: 3rem;
+  line-height: 2.7rem;
   max-width: 3rem;
-  padding: 0 .9rem;
+  padding: 0 .8rem;
   position: absolute;
   text-align: center;
   transition: all .6s;
@@ -224,13 +234,13 @@
     color: #5f5f5f;
     cursor: default;
     max-width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1.3rem;
     width: auto;
     @media screen and (max-width: 375px) {
       padding: 0 1rem;
     }
     i {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       margin-right: 3px;
       @media screen and (max-width: 375px) {
         font-size: 1.2rem;
@@ -248,6 +258,7 @@
     display: inline-block;
     display: none;
     line-height: inherit;
+    margin-top: -3px;
     overflow: hidden;
     //transition: all .3s;
     vertical-align: middle;

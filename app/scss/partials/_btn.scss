@@ -8,8 +8,8 @@
   font-weight: 600;
   letter-spacing: 1.3px;
   display: inline-block;
-  height: 4rem;
-  line-height: 4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
   padding: 0 4rem;
   text-align: center;
   text-transform: uppercase;
@@ -32,6 +32,7 @@ input[type="submit"] {
 
 
 .like-button {
+  margin-right: 5px;
   position: relative;
   z-index: 99;
   &.liked {
@@ -43,18 +44,21 @@ input[type="submit"] {
 }//.like-button
 
 .like-icon {
+  color: #484F56;
   width: 27px;
   height: 30px;
   display: inline-block;
   position: relative;
-  font-size: 1.5rem;
-  background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#cccccc" fill-rule="evenodd"/></svg>') no-repeat center;
+  font-size: 2.5rem;
+  text-align: center;
+  background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#484F56" fill-rule="evenodd"/></svg>') no-repeat center;
   background-size: 100%;
   animation: heartUnlike .25s $bezier both;
 }
 
 .liked .like-icon {
   animation: heartPulse .25s $bezier both;
+  color: $icon-red;
 
   [class^="heart-animation-"] {
     background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#{$icon-red}" fill-rule="evenodd"/></svg>') no-repeat center;
