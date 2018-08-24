@@ -111,6 +111,10 @@ $(function(){
         $(this).toggleClass('liked');
     });
 
+    $('.wear-icon').on('click', function() {
+        $(this).toggleClass('active');
+    });
+
 
 });
 
