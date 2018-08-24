@@ -5520,6 +5520,8 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .occasion-item .occasion-image { max-height: 33rem; overflow: hidden; position: relative; }
 
+@media screen and (max-width: 425px) { .occasion-item .occasion-image { max-height: 23.8rem; } }
+
 .occasion-item .occasion-image img { max-width: 33rem; width: 100%; }
 
 .occasion-item .occasion-info { background: #fff; color: #666; font-size: 1.2rem; font-weight: 600; padding: 2rem; }

@@ -58,11 +58,14 @@
     max-height: 33rem;
     overflow: hidden;
     position: relative;
+    @media screen and (max-width: 425px) {
+      max-height: 23.8rem;
+    }
     img {
       max-width: 33rem;
       width: 100%;
     }
-  }
+  }//.occasion-image
 
   .occasion-info {
     background: #fff;
