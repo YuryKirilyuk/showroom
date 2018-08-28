@@ -5524,6 +5524,8 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .occasion-item .occasion-image img { max-height: 33rem; width: 100%; }
 
+@media screen and (max-width: 425px) { .occasion-item .occasion-image img { max-height: 23.8rem; } }
+
 .occasion-item .occasion-info { background: #fff; color: #666; font-size: 1.2rem; font-weight: 600; padding: 2rem; }
 
 .occasion-item .occasion-info .fa { color: #D7D7D7; margin-right: 1rem; }
@@ -5612,7 +5614,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .community-section .community-slider .community-title { font-size: 1.6rem; font-weight: bold; line-height: 1.8rem; }
 
-.community-section .community-slider .community-title a { color: #666; }
+.community-section .community-slider .community-title a { color: #666; word-break: break-word; word-wrap: break-word; }
 
 .community-section .community-slider .community-title a:hover { color: #1f2d3d; }
 

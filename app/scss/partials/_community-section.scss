@@ -44,6 +44,8 @@
       line-height: 1.8rem;
       a {
         color: #666;
+        word-break: break-word;
+        word-wrap: break-word;
         &:hover {
           color: #1f2d3d;
         }
