@@ -5384,7 +5384,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .tag-container .price { font-size: 1.4rem; font-weight: 700; }
 
-.tag-container .product-link { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; bottom: 0; color: #484F56; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; padding-right: 1rem; position: absolute; right: 0; text-align: center; top: 0; width: 100%; }
+.tag-container .product-link { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; bottom: 0; color: #484F56; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; padding-right: 1rem; position: absolute; right: 0; text-align: center; top: 0; width: 3.5rem; }
 
 .tag-container .product-link:hover { background: rgba(0, 0, 0, 0.07); color: #1f2d3d; }
 
@@ -5394,15 +5394,15 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .add-tag .fa-tag { color: #fff; font-size: 1.4rem; }
 
-.add-tag .delete-tag { color: #ccc; float: right; font-size: 1.2rem; font-weight: 500; line-height: 1.8rem; margin-bottom: .5rem; margin-top: -.6rem; }
+.add-tag .delete-tag { color: #ccc; float: right; font-size: 1.4rem; font-weight: 500; line-height: 1.8rem; margin-bottom: .5rem; margin-top: -.6rem; }
 
 .add-tag .delete-tag:hover { color: #a4acb8; }
 
-.add-tag .form { background-color: #fff; margin: 1.5rem 1rem; padding: 1rem; position: relative; width: 18rem; }
+.add-tag .form { background-color: #fff; margin: 1.5rem 1rem; padding: 1rem; position: relative; width: 20rem; }
 
 .add-tag .form:before { content: ''; height: 0; position: absolute; width: 0; z-index: 1; }
 
-.add-tag .form input { color: #1f2d3d; border-radius: 4px; border: solid 1px #ccc; box-shadow: none !important; font-size: 1rem; font-style: italic; height: 20px; margin-bottom: 6px; outline: none !important; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+.add-tag .form input { color: #1f2d3d; border-radius: 4px; border: solid 1px #ccc; box-shadow: none !important; font-size: 1.2rem; font-style: italic; height: 2.6rem; margin-bottom: .7rem; outline: none !important; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
 .add-tag .form input::-webkit-input-placeholder { color: #8c8c8c; }
 
@@ -5434,7 +5434,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .add-tag .link-button:hover { color: #a4acb8; }
 
-.add-tag .link-button .icon-link { height: 1.5rem; -webkit-transform: rotateZ(45deg); -ms-transform: rotate(45deg); transform: rotateZ(45deg); width: 3rem; }
+.add-tag .link-button .icon-link { height: 2rem; -webkit-transform: rotateZ(45deg); -ms-transform: rotate(45deg); transform: rotateZ(45deg); width: 3rem; }
 
 .add-tag form .url-link:not(.show) { height: 0; margin: 0; padding-bottom: 0; padding-top: 0; visibility: hidden; }
 
