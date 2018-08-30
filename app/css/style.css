@@ -5392,7 +5392,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .tag-container .product-link:hover { background: rgba(0, 0, 0, 0.07); color: #1f2d3d; }
 
-.tag-container .fa-tag { color: #fff; font-size: 1.7rem; text-shadow: 1px 1px 20px #000, -1px -1px 20px #000; -webkit-transform: translateY(5px) translateX(7px); -ms-transform: translateY(5px) translateX(7px); transform: translateY(5px) translateX(7px); }
+.tag-container .fa-tag { color: #fff; font-size: 1.7rem; text-shadow: 1px 1px 20px #000, -1px -1px 20px #000; -webkit-transform: translateY(5px); -ms-transform: translateY(5px); transform: translateY(5px); }
 
 @media screen and (max-width: 425px) { .tag-container .fa-tag { font-size: 1.4rem; } }
 
@@ -5406,7 +5406,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .add-tag .delete-tag:hover { color: #a4acb8; }
 
-.add-tag .form { background-color: #fff; border-radius: 4px; margin: 1.5rem 1rem; padding: 1rem; position: relative; width: 20rem; }
+.add-tag .form { background-color: #fff; border-radius: 4px; font-weight: 600; margin: 1.5rem 1rem; padding: 1rem; position: relative; width: 20rem; }
 
 .add-tag .form:before { content: ''; height: 0; position: absolute; width: 0; z-index: 1; }
 
