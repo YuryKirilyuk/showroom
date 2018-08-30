@@ -116,7 +116,7 @@ $(function(){
         $(this).toggleClass('active');
     });
 
-    $('.tag-text').on('click', function() {
+    $('[data-user="logged"]').on('click', function() {
         $(this).parent().addClass('add-tag');
     });
 
