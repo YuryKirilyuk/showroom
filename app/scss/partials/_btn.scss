@@ -39,7 +39,10 @@ input[type="submit"] {
     color: $icon-red;
     .like-icon {
       background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#{$icon-red}" fill-rule="evenodd"/></svg>') no-repeat center;
-    }
+      @media screen and (max-width: 425px) {
+        background: url('data:image/svg+xml;utf8,<svg width="18" height="20" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#{$icon-red}" fill-rule="evenodd"/></svg>') no-repeat center;
+      }
+    }//.like-icon
   }
 }//.like-button
 
@@ -54,6 +57,10 @@ input[type="submit"] {
   background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="#484F56" fill-rule="evenodd"/></svg>') no-repeat center;
   background-size: 100%;
   animation: heartUnlike .1s $bezier both;
+  @media screen and (max-width: 425px) {
+    height: 20px;
+    width: 18px;
+  }
 }
 
 .liked .like-icon {

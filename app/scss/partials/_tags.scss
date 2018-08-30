@@ -86,6 +86,9 @@
     font-size: 1.7rem;
     text-shadow: 1px 1px 20px #000, -1px -1px 20px #000;
     transform:  translateY(5px) translateX(7px); //rotateZ(90deg)
+    @media screen and (max-width: 425px) {
+      font-size: 1.4rem;
+    }
   }
 }//.tag-container
 
@@ -95,6 +98,9 @@
   display: flex;
   position: absolute;
   z-index: 9;
+  &:hover {
+    .form {display: block;}
+  }
   .fa-tag {
     color: #fff;
     font-size: 1.4rem;
@@ -111,6 +117,7 @@
   }
   .form {
     background-color: #fff;
+    border-radius: 4px;
     margin: 1.5rem 1rem;
     padding: 1rem;
     position: relative;
@@ -121,6 +128,14 @@
       position: absolute;
       width: 0;
       z-index: 1;
+    }
+    &:after {
+      top: -2rem;
+      content: '';
+      height: 2rem;
+      left: 0;
+      position: absolute;
+      width: 100%;
     }
     input {
       @include placeholder {
@@ -136,7 +151,7 @@
       margin-bottom: .7rem;
       outline: none !important;
       transition: $default-transition;
-      &:first-child {padding-right: 3rem;}
+      &:first-child {padding-right: 3.5rem;}
       &:last-child {margin: 0;}
     }
   }//form
@@ -232,10 +247,13 @@
   transition: all .6s;
   white-space: nowrap;
   z-index: 1;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     bottom: 1rem;
     font-size: .9rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
     left: .5rem;
+    padding: 0 .5rem;
   }
   &:not(.has-tags):hover {
     border-radius: 3rem;
@@ -248,7 +266,6 @@
       padding: 0 1rem;
     }
     i {
-      //font-size: 1.5rem;
       margin-right: 3px;
       @media screen and (max-width: 375px) {
         font-size: 1.2rem;
@@ -261,6 +278,9 @@
     font-size: 1.5rem;
     transition: all .3s;
     vertical-align: middle;
+    @media screen and (max-width: 425px) {
+      font-size: 1.2rem;
+    }
   }
   span {
     display: inline-block;
@@ -268,9 +288,10 @@
     line-height: inherit;
     margin-top: -3px;
     overflow: hidden;
-    //transition: all .3s;
     vertical-align: middle;
-    //width: 0;
+    @media screen and (max-width: 425px) {
+      margin-top: -1px;
+    }
   }
   &.has-tags {
     &:before {
@@ -303,6 +324,9 @@
   font-size: 2rem;
   position: relative;
   transition: $default-transition;
+  @media screen and (max-width: 425px) {
+    font-size: 1.5rem;
+  }
   &:before {
     background: #aaa;
     border: 1px solid #fff;

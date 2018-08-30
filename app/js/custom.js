@@ -1,18 +1,19 @@
-$( window ).load(function() {
+var $grid;
 
-    $('.grid').masonry({
-        // options
+jQuery(window).load(function() {
+    $grid = jQuery('.grid').masonry({
         itemSelector: '.grid-item',
-        //columnWidth: 325,
-        //columnWidth: '.grid-sizer',
         gutter: 5,
+        // transitionDuration: 0,
         horizontalOrder: true,
-        //percentPosition: true,
         fitWidth: true
     });
+    jQuery('.grid').css('opacity', '1');
+    jQuery('.grid-item').css('opacity', '1');
 
-    $('.grid').css('opacity','1');
-
+    $grid.imagesLoaded().progress(function() {
+        $grid.masonry('layout');
+    });
 });
 
 
@@ -115,22 +116,31 @@ $(function(){
         $(this).toggleClass('active');
     });
 
-
 });
 
 
-//opacity fo ivon-wear (events page)
-(function opacity(){
+$('.image').on('load', function() {
+    //$(this).parents('.grid-item').css('opacity','1');
+});
 
-    $('.icon-wear').each(function(){
-        var num = $(this).data('requests'),
-            op = 1;
 
-        if(num < 30) {op = .3;}
-        else if (num >= 30 && num < 50 ) {op = .5;}
-        else if (num >= 50 && num <= 99 ) {op = .7;}
-
-        $(this).css('opacity',op);
+//opacity fo icon-wear (events page)
+function set_opacity() {
+    jQuery('.grid-item img').load(function(){
+        jQuery(this).parents('.grid-item').addClass('visible');
     });
-
+    jQuery('.icon-wear').each(function() {
+        var num = jQuery(this).data('requests'),
+            op = 1;
+        if (num < 30) {
+            op = .3;
+        } else if (num >= 30 && num < 50) {
+            op = .5;
+        } else if (num >= 50 && num <= 99) {
+            op = .7;
+        }
+        jQuery(this).css('opacity', op);
+    });
+}(function opacity() {
+    set_opacity();
 }());
