@@ -116,6 +116,14 @@ $(function(){
         $(this).toggleClass('active');
     });
 
+    $('.tag-text').on('click', function() {
+        $(this).parent().addClass('add-tag');
+    });
+
+    $("body").click(function(e) {
+        if($(e.target).closest(".tag-container").length==0) $(".tag-container").removeClass('add-tag');
+    });
+
 });
 
 

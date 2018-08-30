@@ -1,9 +1,10 @@
 .tag-container {
-  opacity: 0;
+  //opacity: 0;
   position: absolute;
   text-align: center;
   transition: $default-transition;
-  visibility: hidden;
+  //visibility: hidden;
+  &.add-tag,
   &:hover {
     .tag-content {
       visibility: visible;
@@ -16,21 +17,22 @@
   }
 
   .tag-content {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 0 10px -1px rgba(0, 0, 0, .3);
-    bottom: 1.5rem;
+    //background: #fff;
+    //border-radius: 4px;
+    //box-shadow: 0 0 10px -1px rgba(0, 0, 0, .3);
+    //bottom: 1.5rem;
     visibility: hidden;
-    left: 45%;
-    margin-bottom: 1rem;
-    min-width: 14rem;
+    //left: 0;
+    //margin: 1.5rem 1rem;
+    //min-width: 14rem;
     opacity: 0;
     //overflow: hidden;
-    padding: .5rem 3.5rem .5rem .8rem;
-    position: absolute;
-    text-align: left;
-    transform: translateX(-50%);
+    //padding: .5rem 3.5rem .5rem .8rem;
+    //position: absolute;
+    //text-align: left;
+    //transform: translateX(-50%);
     transition: $default-transition;
+    //width: 20rem;
     z-index: 9;
     &:before {
       border-top: 7px solid #fff;
@@ -54,9 +56,12 @@
       width: 100%;
     }
   }//.tag-content
+
   .name {
     font-size: 1.4rem;
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
     padding: 2px 0px;
   }
   .price {
@@ -90,20 +95,70 @@
       font-size: 1.4rem;
     }
   }
+
 }//.tag-container
 
 
+.tag-form {
+  //display: none;
+  //background-color: #fff;
+  //border-radius: 4px;
+  //bottom: 1.5rem;
+  //font-weight: 600;
+  //margin: 1.5rem 1rem;
+  //padding: 1rem;
+  //position: relative;
+  //position: absolute;
+  //width: 20rem;
+  /*&:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+  }
+  &:after {
+    top: -2rem;
+    content: '';
+    height: 2rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }*/
+  input {
+    @include placeholder {
+      color: #8c8c8c;
+    }
+    color: $black;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    box-shadow: none !important;
+    font-size: 1.2rem;
+    font-style: italic;
+    height: 2.6rem;
+    margin-bottom: .7rem;
+    outline: none !important;
+    transition: $default-transition;
+    &:first-child {padding-right: 3.5rem;}
+    &:last-child {margin: 0;}
+  }
+}//form
+
+
+
 .add-tag {
-  align-items: center;
-  display: flex;
-  position: absolute;
-  z-index: 9;
+  //align-items: center;
+  //display: flex;
+  //position: absolute;
+  //transform: translateX(-50%);
+  //transition: initial;
+  //z-index: 9;
   &:hover {
     .form {display: block;}
   }
   .fa-tag {
-    color: #fff;
-    font-size: 1.4rem;
+    //color: #fff;
+    //font-size: 1.4rem;
   }
   .delete-tag {
     color: #ccc;
@@ -115,47 +170,7 @@
     margin-top: -.5rem;
     &:hover {color: $grey;}
   }
-  .form {
-    background-color: #fff;
-    border-radius: 4px;
-    font-weight: 600;
-    margin: 1.5rem 1rem;
-    padding: 1rem;
-    position: relative;
-    width: 20rem;
-    &:before {
-      content: '';
-      height: 0;
-      position: absolute;
-      width: 0;
-      z-index: 1;
-    }
-    &:after {
-      top: -2rem;
-      content: '';
-      height: 2rem;
-      left: 0;
-      position: absolute;
-      width: 100%;
-    }
-    input {
-      @include placeholder {
-        color: #8c8c8c;
-      }
-      color: $black;
-      border-radius: 4px;
-      border: solid 1px #ccc;
-      box-shadow: none !important;
-      font-size: 1.2rem;
-      font-style: italic;
-      height: 2.6rem;
-      margin-bottom: .7rem;
-      outline: none !important;
-      transition: $default-transition;
-      &:first-child {padding-right: 3.5rem;}
-      &:last-child {margin: 0;}
-    }
-  }//form
+
   &.tag-left {
     .form:before {
       border-right: 7px solid #fff;
