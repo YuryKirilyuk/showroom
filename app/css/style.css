@@ -5392,7 +5392,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .tag-container .product-link:hover { background: rgba(0, 0, 0, 0.07); color: #1f2d3d; }
 
-.tag-container .fa-tag { color: #fff; font-size: 1.7rem; text-shadow: 1px 1px 20px #000, -1px -1px 20px #000; -webkit-transform: translateY(5px); -ms-transform: translateY(5px); transform: translateY(5px); }
+.tag-container .fa-tag { color: #fff; font-size: 1.7rem; text-shadow: 1px 1px 20px #000, -1px -1px 20px #000; }
 
 @media screen and (max-width: 425px) { .tag-container .fa-tag { font-size: 1.4rem; } }
 
