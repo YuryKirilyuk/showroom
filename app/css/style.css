@@ -5490,7 +5490,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .wear-icon.active:before { background: #df2f4a; }
 
-.tag-content { background-color: #fff; border-radius: 4px; bottom: 1.5rem; box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.3); font-weight: 600; left: 0; margin-bottom: 1rem; max-width: 3rem; padding: 1rem; position: absolute; text-align: left; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.tag-content { background-color: #fff; border-radius: 4px; bottom: 1.5rem; box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.3); font-weight: 600; left: 0; margin-bottom: 1rem; max-width: 30rem; padding: 1rem; position: absolute; text-align: left; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
 .tag-content:before { border-top: 7px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent; content: ''; bottom: -5px; height: 0; left: 0; margin: auto; position: absolute; right: 0; width: 0; }
 
@@ -5722,7 +5722,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 425px) { .event-items-section .grid { width: 100%; } }
 
-.event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: 1rem; opacity: 0; padding: 1rem; width: 325px; -webkit-transition: opacity .3s 3s; transition: opacity .3s 3s; /*
+.event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: 1rem; opacity: 0; padding: 1rem; width: 325px; -webkit-transition: opacity .3s 4s; transition: opacity .3s 4s; /*
     &[style*="left: 0"] {
       &:first-child {opacity: 1 !important;}
       @media screen and (max-width: 1702px) {
@@ -5749,7 +5749,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
     }//&[style*="left: 0"]
 */ }
 
-.event-items-section .grid-item.visible { opacity: 1; -webkit-transition: opacity .5s 7s; transition: opacity .5s 7s; }
+.event-items-section .grid-item.visible { opacity: 1; -webkit-transition: opacity .5s 8s; transition: opacity .5s 8s; }
 
 .event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.06); }
 
