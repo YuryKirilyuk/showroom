@@ -19,32 +19,25 @@ h2{
 }
 h1,h2,h3,h4,h5,h6 {
 	color: $black;
+	font-weight: 600;
 }
-
+h1,h2,h3 {
+	color: $black;
+	font-family: $custom-font-family;
+}
+h4,h5,h6 {
+	color: #666;
+	font-family: $base-font-family;
+}
 h1{
 	font-size: 4.2rem;
 	font-weight: 700;
 }
-h2{
-	font-size: 3rem;
-	font-weight: 600;
-}
-h3{
-	font-size: 2.4rem;
-	font-weight: 600;
-}
-h4{
-	font-size: 1.8rem;
-	font-weight: 600;
-}
-h5{
-	font-size: 1.6rem;
-	font-weight: 600;
-}
-h6{
-	font-size: 1.4rem;
-	font-weight: 600;
-}
+h2{font-size: 3rem;}
+h3{font-size: 2.4rem;}
+h4{font-size: 1.8rem;}
+h5{font-size: 1.6rem;}
+h6{font-size: 1.4rem;}
 
 .text-block,
 p {
