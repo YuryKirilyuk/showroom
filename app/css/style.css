@@ -5056,7 +5056,7 @@ h6 { font-size: 1.4rem; font-weight: 600; }
 
 .subtitle { color: #fff; font-size: 2rem; line-height: 3rem; margin: auto; max-width: 76rem; text-align: center; }
 
-h2.section-title { color: #1f2d3d; font-family: "Vollkorn", serif; font-size: 3rem; font-weight: 600; line-height: normal; margin-bottom: 2rem; text-align: center; }
+h2.section-title { color: #1f2d3d; font-family: "Vollkorn", serif; font-size: 3rem; font-weight: 600; line-height: normal; margin: 0 auto 2rem; max-width: 80rem; text-align: center; }
 
 @media screen and (max-width: 425px) { h2.section-title { font-size: 2.4rem; line-height: normal; margin-bottom: 2.5rem; } }
 
@@ -5386,13 +5386,13 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .modal-open { overflow: visible; padding: 0 !important; }
 
-.tag-container { opacity: 0; position: absolute; text-align: center; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; visibility: hidden; }
+.tag-container { opacity: 0; position: absolute; text-align: center; visibility: hidden; }
 
 .tag-container.add-tag .tag-content, .tag-container:hover .tag-content { visibility: visible; opacity: 1; }
 
 .show-tags .tag-container { opacity: 1; visibility: visible; }
 
-.tag-container .tag-content { visibility: hidden; opacity: 0; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 9; }
+.tag-container .tag-content { visibility: hidden; opacity: 0; z-index: 9; }
 
 .tag-container .tag-content:before { border-top: 7px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent; content: ''; bottom: -5px; height: 0; left: 0; margin: auto; position: absolute; right: 0; width: 0; }
 
@@ -5722,7 +5722,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 425px) { .event-items-section .grid { width: 100%; } }
 
-.event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: 1rem; opacity: 0; padding: 1rem; width: 325px; -webkit-transition: opacity .3s 4s; transition: opacity .3s 4s; /*
+.event-items-section .grid-item { background: rgba(0, 0, 0, 0.025); border-radius: 5px; margin-bottom: 1rem; opacity: 0; padding: 1rem; width: 325px; -webkit-transition: opacity .3s 15s; transition: opacity .3s 15s; /*
     &[style*="left: 0"] {
       &:first-child {opacity: 1 !important;}
       @media screen and (max-width: 1702px) {
@@ -5749,7 +5749,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
     }//&[style*="left: 0"]
 */ }
 
-.event-items-section .grid-item.visible { opacity: 1; -webkit-transition: opacity .5s 8s; transition: opacity .5s 8s; }
+.event-items-section .grid-item.visible { opacity: 1; -webkit-transition: opacity .5s 15s; transition: opacity .5s 15s; }
 
 .event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.06); }
 

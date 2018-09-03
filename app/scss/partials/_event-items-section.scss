@@ -22,14 +22,16 @@
     border-radius: 5px;
     margin-bottom: 1rem;
     opacity: 0;
+    //visibility: hidden;
     padding: 1rem;
     //transition: all .3s;
     width: 325px;
-    transition: opacity .3s 4s;
+    transition: opacity .3s 15s;
 
     &.visible {
       opacity: 1;
-      transition: opacity .5s 8s;
+      transition: opacity .5s 15s;
+      //visibility: visible;
     }
 
 

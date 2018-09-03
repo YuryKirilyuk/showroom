@@ -21,7 +21,8 @@ h2.section-title {
   font-size: 3rem;
 	font-weight: 600;
   line-height: normal;
-  margin-bottom: 2rem;
+	margin: 0 auto 2rem;
+	max-width: 80rem;
 	text-align: center;
 	@media screen and (max-width: 425px) {
 		font-size: 2.4rem;
