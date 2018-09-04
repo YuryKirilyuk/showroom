@@ -74,17 +74,29 @@ footer{
 		padding-bottom: .7rem;
 		padding-top: .7rem;
 	}
+	@media screen and (max-width: 425px) {
+		.row {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
 }
 .footer-copyright {
 	display: inline-block;
-	font-size: 1.2rem;
-	font-weight: normal;
+	//font-size: 1.2rem;
+	//font-weight: normal;
 	line-height: 1.5;
 	@media screen and (max-width: 991px) {
-		margin-left: 3rem;
+
+	}
+	@media screen and (max-width: 665px) {
+		display: block;
+		+ .devider {display: none;}
 	}
 	@media screen and (max-width: 375px) {
-		margin-left: 1rem;
+		font-size: 1.2rem;
+		font-weight: normal;
+		span {display: block;}
 	}
 }//.footer-copyright
 
