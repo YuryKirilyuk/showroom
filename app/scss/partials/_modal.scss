@@ -47,7 +47,13 @@
           top: 1.5rem;
         }
 
-      .modal-body {
+      &:not(#login) .modal-body {
+        @media screen and (max-width: 375px) {
+          left: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
 
       }//.modal-body
 

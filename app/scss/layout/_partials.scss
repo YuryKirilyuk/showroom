@@ -68,3 +68,8 @@ nav.navbar.bootsnav.navbar-fixed.navbar-transparent {
 	margin-top: 5px;
 	width: 2.4rem;
 }
+
+//body:not(.page-template-occasions-page) #preloader,
+body:not(.tax-ocassions) #preloader {
+	display: none;
+}
