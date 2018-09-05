@@ -5280,7 +5280,7 @@ nav.navbar.bootsnav.navbar-transparent.white ul.nav > li.active > a { color: #c2
 
 .login.logged-in.open .fa { -webkit-transform: rotateZ(180deg); -ms-transform: rotate(180deg); transform: rotateZ(180deg); }
 
-.login.logged-in .dropdown-menu { border-radius: 6px; box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05); margin-right: -.5rem; margin-top: -1.5rem; min-width: 15rem; text-align: center; }
+.login.logged-in .dropdown-menu { border-radius: 6px; box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05); margin-right: -.5rem; margin-top: -.5rem; min-width: 15rem; text-align: center; }
 
 .login.logged-in .dropdown-menu:before, .login.logged-in .dropdown-menu:after { border-bottom: 1rem solid #fff; border-left: 8px solid transparent; border-right: 8px solid transparent; content: ''; height: 0; position: absolute; right: 1.8rem; top: -10px; width: 0; z-index: 1; }
 
