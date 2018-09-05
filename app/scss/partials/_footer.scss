@@ -75,16 +75,16 @@ footer{
 		padding-top: .7rem;
 	}
 	@media screen and (max-width: 425px) {
-		.row {
+		/*.row {
 			display: flex;
 			flex-direction: column-reverse;
-		}
+		}*/
 	}
 }
 .footer-copyright {
 	display: inline-block;
-	//font-size: 1.2rem;
-	//font-weight: normal;
+	font-size: 1.2rem;
+	font-weight: normal;
 	line-height: 1.5;
 	@media screen and (max-width: 991px) {
 
