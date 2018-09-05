@@ -26,11 +26,11 @@
     padding: 1rem;
     //transition: all .3s;
     width: 325px;
-    transition: opacity .3s 15s;
+    transition: opacity .3s 1s;
 
     &.visible {
       opacity: 1;
-      transition: opacity .5s 15s;
+      transition: opacity .5s 1s;
       //visibility: visible;
     }
 
