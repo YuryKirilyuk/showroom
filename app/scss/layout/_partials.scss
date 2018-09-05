@@ -69,7 +69,11 @@ nav.navbar.bootsnav.navbar-fixed.navbar-transparent {
 	width: 2.4rem;
 }
 
-//body:not(.page-template-occasions-page) #preloader,
-body:not(.tax-ocassions) #preloader {
+body #preloader {
 	display: none;
+}
+body.home #preloader,
+body[class*="occasions-page"] #preloader,
+body.tax-ocassions #preloader {
+	display: flex;
 }

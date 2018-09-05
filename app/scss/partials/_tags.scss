@@ -89,7 +89,7 @@
   .fa-tag {
     color: #fff;
     font-size: 1.7rem;
-    text-shadow: 1px 1px 20px #000, -1px -1px 20px #000;
+    text-shadow: 1px 1px 20px rgba(0,0,0,.5), -1px -1px 20px rgba(0,0,0,.5);
     //transform: translateY(5px); //rotateZ(90deg) translateX(7px)
     @media screen and (max-width: 425px) {
       font-size: 1.4rem;

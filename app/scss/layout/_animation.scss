@@ -75,3 +75,8 @@
         transform: translate(2px, -18px) rotate(-25deg);
     }
 }
+
+@keyframes heroImage {
+    0%, 75% {background-color: #000;}
+    100% {background-color: transparent;}
+}
