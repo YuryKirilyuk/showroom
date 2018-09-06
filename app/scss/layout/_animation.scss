@@ -77,6 +77,6 @@
 }
 
 @keyframes heroImage {
-    0%, 75% {background-color: #000;}
-    100% {background-color: transparent;}
+    0%, 75% {background-color: #000; z-index: 1;}
+    100% {background-color: transparent; z-index: 0;}
 }

@@ -88,6 +88,7 @@ p {
 		top: 0;
 		width: 100%;
 		height: 100%;
+		z-index: 0;
 	}
 	@media screen and (max-width: 375px) {
 		height: 50rem;
@@ -105,6 +106,18 @@ p {
 	}
 }//.hero-image
 
-
+/*.hero-slider {
+	&:before {
+		animation: heroImage 1s ease;
+		background-color: transparent;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+}*/
 
 

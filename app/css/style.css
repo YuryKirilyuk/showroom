@@ -5012,11 +5012,15 @@ img { height: auto; max-width: 100%; }
     -webkit-transform: translate(2px, -18px) rotate(-25deg);
             transform: translate(2px, -18px) rotate(-25deg); } }
 
-@-webkit-keyframes heroImage { 0%, 75% { background-color: #000; }
-  100% { background-color: transparent; } }
+@-webkit-keyframes heroImage { 0%, 75% { background-color: #000;
+    z-index: 1; }
+  100% { background-color: transparent;
+    z-index: 0; } }
 
-@keyframes heroImage { 0%, 75% { background-color: #000; }
-  100% { background-color: transparent; } }
+@keyframes heroImage { 0%, 75% { background-color: #000;
+    z-index: 1; }
+  100% { background-color: transparent;
+    z-index: 0; } }
 
 @media screen and (min-width: 1200px) { .container { width: 1140px; } }
 
@@ -5058,7 +5062,7 @@ h6 { font-size: 1.4rem; }
 
 .hero-image { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-color: #000; background-position: center; background-size: cover; background: none; height: 38rem; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; }
 
-.hero-image:not(.event-info-section):before, .hero-image.event-info-section.has-image:before { -webkit-animation: heroImage 1s ease; animation: heroImage 1s ease; background-color: transparent; content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.hero-image:not(.event-info-section):before, .hero-image.event-info-section.has-image:before { -webkit-animation: heroImage 1s ease; animation: heroImage 1s ease; background-color: transparent; content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0; }
 
 @media screen and (max-width: 375px) { .hero-image { height: 50rem; } }
 
@@ -5066,6 +5070,19 @@ h6 { font-size: 1.4rem; }
 
 @media screen and (max-width: 375px) { body[class*="occasions-page"] .hero-image { height: 40rem; } }
 
+/*.hero-slider {
+	&:before {
+		animation: heroImage 1s ease;
+		background-color: transparent;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+}*/
 .page-title { color: #fff; font-family: "Vollkorn", serif; font-size: 4.2rem; font-weight: bold; line-height: 5rem; margin-bottom: 2rem; text-align: center; }
 
 .subtitle { color: #fff; font-size: 2rem; line-height: 3rem; margin: auto; max-width: 76rem; text-align: center; }
@@ -5560,7 +5577,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .hero-slider .slick-dots li.slick-active button { opacity: 1; }
 
-.occasion-section { margin-top: -6rem; padding-bottom: 8rem; }
+.occasion-section { margin-top: -6rem; padding-bottom: 8rem; position: relative; z-index: 1; }
 
 @media screen and (max-width: 374px) { .occasion-section .col-xs-6 { padding-right: 1rem; padding-left: 1rem; } }
 
@@ -5740,7 +5757,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .event-items-section { padding: 5rem 2rem 2rem; }
 
-@media screen and (max-width: 425px) { .event-items-section { overflow: hidden; padding-left: 0; padding-right: 0; } }
+@media screen and (max-width: 425px) { .event-items-section { padding-left: 0; padding-right: 0; } }
 
 .event-items-section .grid { opacity: 0; margin: auto; }
 
