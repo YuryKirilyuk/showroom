@@ -5463,8 +5463,6 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .tag-form input:-ms-input-placeholder { color: #8c8c8c; }
 
-.tag-form input:first-child { padding-right: 3.5rem; }
-
 .tag-form input:last-child { margin: 0; }
 
 .add-tag:hover .form { display: block; }
