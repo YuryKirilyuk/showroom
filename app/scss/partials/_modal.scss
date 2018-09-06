@@ -47,7 +47,7 @@
           top: 1.5rem;
         }
 
-      &:not(#login) .modal-body {
+      &#overlay .modal-body {
         @media screen and (max-width: 375px) {
           left: 0;
           position: absolute;

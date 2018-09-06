@@ -14,6 +14,16 @@ jQuery(window).load(function() {
     $grid.imagesLoaded().progress(function() {
         $grid.masonry('layout');
     });
+
+
+    tag_popup_position();
+
+});
+
+$(window).resize(function() {
+
+    tag_popup_position();
+
 });
 
 
@@ -124,7 +134,23 @@ $(function(){
         if($(e.target).closest(".tag-container").length==0) $(".tag-container").removeClass('add-tag');
     });
 
+
+
 });
+
+function tag_popup_position() {
+
+    $('.tag-container').each(function(){
+        var param = $(this).position(),
+            mLeft = 0;
+
+        console.log(param);
+        mLeft = param.left + 8; //8 - padding in .grid-item
+        $(this).find('.tag-content').css('margin-left', '-' + mLeft + 'px');
+
+    });
+}
+tag_popup_position();
 
 
 $('.image').on('load', function() {

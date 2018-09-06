@@ -65,13 +65,16 @@
     width: 3rem;
   }
   .contact-phone {
-    color: #666;
+    color: #333;
     display: flex;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 3rem;
     margin-bottom: 1.8rem;
-    a:hover {color: $black;}
+    a {
+      color: $red;
+      &:hover {color: darken($red, 7%);}
+    }
   }
   .contact-email {
     @extend .contact-phone;
