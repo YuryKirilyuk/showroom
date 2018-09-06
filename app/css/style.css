@@ -5176,7 +5176,11 @@ footer .logo { margin-bottom: 1.5rem; margin-top: 0; }
 
 .btn.btn-sm, input.btn-sm[type="submit"] { border-radius: 4px; font-size: 1rem; height: 2rem; line-height: 2rem; letter-spacing: 1.3px; padding: 0; width: 5rem; }
 
-.like-button { margin-right: 5px; position: relative; z-index: 99; }
+.like-button { margin-right: 5px; position: relative; top: 1px; z-index: 99; }
+
+@media screen and (max-width: 425px) { .like-button { top: 2px; } }
+
+@media screen and (max-width: 320px) { .like-button { top: 3px; } }
 
 .like-button.liked { color: #f74236; }
 
@@ -5531,6 +5535,10 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .tag-content { background-color: #fff; border-radius: 4px; bottom: 1.5rem; box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.3); font-weight: 600; left: 0; margin-bottom: 1rem; max-width: 30rem; padding: 1rem; position: absolute; text-align: left; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
+@media screen and (max-width: 375px) { .tag-content { max-width: 17.5rem; } }
+
+@media screen and (max-width: 330px) { .tag-content { max-width: 15rem; } }
+
 .tag-content:before { border-top: 7px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent; content: ''; bottom: -5px; height: 0; left: 0; margin: auto; position: absolute; right: 0; width: 0; }
 
 .tag-content:after { bottom: -2rem; content: ''; height: 2rem; left: 0; position: absolute; width: 100%; }
@@ -5838,7 +5846,9 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 375px) { .event-items-section .grid-item .grid-item-footer .likes { margin-right: .5rem; } }
 
-.event-items-section .grid-item .grid-item-footer .wear { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding-top: 5px; position: relative; z-index: 1; }
+.event-items-section .grid-item .grid-item-footer .wear { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding-top: 4px; position: relative; z-index: 1; }
+
+@media screen and (max-width: 425px) { .event-items-section .grid-item .grid-item-footer .wear { padding-top: 2px; } }
 
 .event-items-section .grid-item .grid-item-footer .wear div { padding: 0 3px 0 1rem; }
 

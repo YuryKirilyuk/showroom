@@ -205,11 +205,11 @@
       .wear {
         display: flex;
         justify-content: space-between;
-        padding-top: 5px;
+        padding-top: 4px;
         position: relative;
         z-index: 1;
         @media screen and (max-width: 425px) {
-          //padding-top: 7px;
+          padding-top: 2px;
         }
         div {
           padding: 0 3px 0 1rem;
