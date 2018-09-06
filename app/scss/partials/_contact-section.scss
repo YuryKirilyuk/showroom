@@ -72,8 +72,8 @@
     line-height: 3rem;
     margin-bottom: 1.8rem;
     a {
-      color: $red;
-      &:hover {color: darken($red, 7%);}
+      color: #666;
+      &:hover {color: $black;}
     }
   }
   .contact-email {

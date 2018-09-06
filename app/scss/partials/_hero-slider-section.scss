@@ -1,7 +1,28 @@
 .hero-slider {
+  height: 500px;
+  left: 0;
   position: relative;
+  width: 100%;
+  @media screen and (max-width: 425px) {
+    height: 570px;
+  }
+  &:before {
+    animation: heroImage 1s ease;
+    background-color: transparent;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
   @media screen and (max-width: 1024px) {
     //margin-top: 9rem;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
   }
 
   .main-page-title {

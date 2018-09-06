@@ -15,7 +15,6 @@ jQuery(window).load(function() {
         $grid.masonry('layout');
     });
 
-
     tag_popup_position();
 
 });
