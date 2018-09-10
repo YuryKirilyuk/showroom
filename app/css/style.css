@@ -5526,7 +5526,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .wear-icon.active:before { background: #dc304b; }
 
-.tag-content { background-color: #fff; border-radius: 4px; bottom: 1.5rem; box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.3); font-weight: 600; left: 0; margin-bottom: 1rem; max-width: 30rem; padding: 1rem; position: absolute; text-align: left; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.tag-content { background-color: #fff; border: 1px solid #ccc; border-radius: 4px; bottom: 1.5rem; box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.3); font-weight: 600; left: 0; margin-bottom: 1rem; max-width: 30rem; padding: 1rem; position: absolute; text-align: left; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
 @media screen and (min-width: 426px) { .tag-content:before { border-top: 7px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent; content: ''; bottom: -5px; height: 0; left: 0; margin: auto; position: absolute; right: 0; width: 0; } }
 
