@@ -303,6 +303,7 @@
   transition: $default-transition;
   @media screen and (max-width: 425px) {
     font-size: 1.5rem;
+    padding-top: 2px;
   }
   &:before {
     background: #aaa;

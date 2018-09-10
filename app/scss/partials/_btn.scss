@@ -43,11 +43,11 @@ input[type="submit"] {
     top: -2px;
   }
   &.liked {
-    color: $icon-red;
+    color: $red;
     .like-icon {
-      background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23f74236" fill-rule="evenodd"/></svg>') no-repeat center;
+      background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23dc304b" fill-rule="evenodd"/></svg>') no-repeat center;
       @media screen and (max-width: 425px) {
-        background: url('data:image/svg+xml;utf8,<svg width="18" height="20" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23f74236" fill-rule="evenodd"/></svg>') no-repeat center;
+        background: url('data:image/svg+xml;utf8,<svg width="18" height="20" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23dc304b" fill-rule="evenodd"/></svg>') no-repeat center;
       }
     }//.like-icon
   }
@@ -72,10 +72,10 @@ input[type="submit"] {
 
 .liked .like-icon {
   animation: heartPulse .1s $bezier both;
-  color: $icon-red;
+  color: $red;
 
   [class^="heart-animation-"] {
-    background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23f74236" fill-rule="evenodd"/></svg>') no-repeat center;
+    background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23dc304b" fill-rule="evenodd"/></svg>') no-repeat center;
     background-size: 100%;
     display: block;
     position: absolute;

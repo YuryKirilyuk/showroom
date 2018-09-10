@@ -5173,19 +5173,19 @@ footer .logo { margin-bottom: 1.5rem; margin-top: 0; }
 
 @media screen and (max-width: 320px) { .like-button { top: -2px; } }
 
-.like-button.liked { color: #f74236; }
+.like-button.liked { color: #dc304b; }
 
-.like-button.liked .like-icon { background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23f74236" fill-rule="evenodd"/></svg>') no-repeat center; }
+.like-button.liked .like-icon { background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23dc304b" fill-rule="evenodd"/></svg>') no-repeat center; }
 
-@media screen and (max-width: 425px) { .like-button.liked .like-icon { background: url('data:image/svg+xml;utf8,<svg width="18" height="20" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23f74236" fill-rule="evenodd"/></svg>') no-repeat center; } }
+@media screen and (max-width: 425px) { .like-button.liked .like-icon { background: url('data:image/svg+xml;utf8,<svg width="18" height="20" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23dc304b" fill-rule="evenodd"/></svg>') no-repeat center; } }
 
 .like-icon { color: #484F56; width: 27px; height: 30px; display: inline-block; position: relative; font-size: 2.5rem; text-align: center; background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23484F56" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; -webkit-animation: heartUnlike 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartUnlike 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
 
 @media screen and (max-width: 425px) { .like-icon { height: 20px; width: 18px; } }
 
-.liked .like-icon { -webkit-animation: heartPulse 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartPulse 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; color: #f74236; }
+.liked .like-icon { -webkit-animation: heartPulse 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; animation: heartPulse 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; color: #dc304b; }
 
-.liked .like-icon [class^="heart-animation-"] { background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23f74236" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; display: block; position: absolute; top: 0; left: 0; width: 16px; height: 14px; opacity: 0; }
+.liked .like-icon [class^="heart-animation-"] { background: url('data:image/svg+xml;utf8,<svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23dc304b" fill-rule="evenodd"/></svg>') no-repeat center; background-size: 100%; display: block; position: absolute; top: 0; left: 0; width: 16px; height: 14px; opacity: 0; }
 
 .liked .like-icon [class^="heart-animation-"]::before, .liked .like-icon [class^="heart-animation-"]::after { content: ''; background: inherit; background-size: 100%; width: inherit; height: inherit; display: inherit; position: relative; top: inherit; left: inherit; opacity: 0; }
 
@@ -5518,7 +5518,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .wear-icon { color: #484F56; cursor: pointer; font-size: 2rem; position: relative; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
-@media screen and (max-width: 425px) { .wear-icon { font-size: 1.5rem; } }
+@media screen and (max-width: 425px) { .wear-icon { font-size: 1.5rem; padding-top: 2px; } }
 
 .wear-icon:before { background: #aaa; border: 1px solid #fff; border-radius: 50%; color: #fff; content: '?'; font-family: "Roboto", sans-serif; font-size: 11px; font-weight: normal; height: 1.8rem; position: absolute; right: -1rem; top: -1rem; width: 1.8rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
 
