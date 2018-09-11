@@ -5171,8 +5171,6 @@ footer .logo { margin-bottom: 1.5rem; margin-top: 0; }
 
 .like-button { margin-right: 5px; position: relative; top: 1px; z-index: 99; }
 
-@media screen and (max-width: 320px) { .like-button { top: -2px; } }
-
 .like-button.liked { color: #dc304b; }
 
 .like-button.liked .like-icon { background: url('data:image/svg+xml;utf8,<svg width="27" height="30" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><title>heart-colored</title><path d="M10.101 4.417S8.895.207 5.111.207c-4.465 0-10.967 6.846 5.082 17.592C25.237 7.03 19.665.202 15.501.202c-4.162 0-5.4 4.215-5.4 4.215z" fill="%23dc304b" fill-rule="evenodd"/></svg>') no-repeat center; }
