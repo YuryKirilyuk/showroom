@@ -210,6 +210,7 @@
   background: rgba(255,255,255,.9);
   bottom: 1.2rem;
   border-radius: 3rem;
+  box-shadow: 0 0 17px -5px #000;
   color: transparent;
   cursor: pointer;
   font-size: 1.2rem;
@@ -263,7 +264,7 @@
     display: inline-block;
     display: none;
     line-height: inherit;
-    margin-top: -3px;
+    //margin-top: -3px;
     overflow: hidden;
     vertical-align: middle;
     @media screen and (max-width: 425px) {

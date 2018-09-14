@@ -5034,13 +5034,13 @@ h1, h2, h3, h4, h5, h6 { color: #1f2d3d; font-weight: 600; }
 
 h1, h2, h3 { font-family: "Vollkorn", serif; margin: auto; max-width: 80rem; }
 
-h4, h5, h6 { color: #333; font-family: "Open Sans", sans-serif; }
+h4, h5, h6 { color: #333; font-family: "Open Sans", sans-serif; line-height: initial; }
 
 h1 { font-size: 4.2rem; font-weight: 700; }
 
 h2 { font-size: 3rem; }
 
-h3 { font-size: 2.4rem; }
+h3 { font-size: 2.4rem; line-height: initial; }
 
 h4 { font-size: 1.8rem; }
 
@@ -5488,7 +5488,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .add-tag form .url-link:not(.show) { /*height: 0; margin: 0; padding-bottom: 0; padding-top: 0; visibility: hidden;*/ }
 
-.item-tag { background: rgba(255, 255, 255, 0.9); bottom: 1.2rem; border-radius: 3rem; color: transparent; cursor: pointer; font-size: 1.2rem; font-weight: 600; height: 3rem; left: 1rem; line-height: 3rem; max-width: 3rem; padding: 0 .8rem; position: absolute; text-align: center; -webkit-transition: all .6s; transition: all .6s; white-space: nowrap; z-index: 1; }
+.item-tag { background: rgba(255, 255, 255, 0.9); bottom: 1.2rem; border-radius: 3rem; box-shadow: 0 0 17px -5px #000; color: transparent; cursor: pointer; font-size: 1.2rem; font-weight: 600; height: 3rem; left: 1rem; line-height: 3rem; max-width: 3rem; padding: 0 .8rem; position: absolute; text-align: center; -webkit-transition: all .6s; transition: all .6s; white-space: nowrap; z-index: 1; }
 
 @media screen and (max-width: 425px) { .item-tag { bottom: 1rem; font-size: .9rem; height: 2.4rem; line-height: 2.4rem; left: .5rem; padding: 0 .6rem; } }
 
@@ -5506,7 +5506,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 425px) { .item-tag i { font-size: 1.2rem; } }
 
-.item-tag span { display: inline-block; display: none; line-height: inherit; margin-top: -3px; overflow: hidden; vertical-align: middle; }
+.item-tag span { display: inline-block; display: none; line-height: inherit; overflow: hidden; vertical-align: middle; }
 
 @media screen and (max-width: 425px) { .item-tag span { margin-top: -1px; } }
 
