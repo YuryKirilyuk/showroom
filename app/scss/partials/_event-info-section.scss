@@ -27,7 +27,7 @@
       color: $black;
     }
     .event-persons-list {
-      color: $black;
+      //color: $black;
       a {color: #666;}
       a:hover {color: $black;}
     }
@@ -50,10 +50,10 @@
   }
   .event-persons-list {
     align-items: center;
-    color: #fff;
+    //color: #fff;
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
+    //font-size: 1.6rem;
     font-weight: bold;
     justify-content: center;
     margin-bottom: 1rem;
@@ -64,7 +64,7 @@
     ul {
       font-weight: normal;
       list-style: none;
-      margin: 1rem 0 0;
+      //margin: 1rem 0 0;
       padding: 0;
       @media screen and (max-width: 992px) {
         margin: 1rem 0 0;

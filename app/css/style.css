@@ -5036,7 +5036,7 @@ h1, h2, h3 { font-family: "Vollkorn", serif; margin: auto; max-width: 80rem; }
 
 h4, h5, h6 { color: #333; font-family: "Open Sans", sans-serif; line-height: initial; }
 
-h1 { font-size: 4.2rem; font-weight: 700; }
+h1 { font-size: 4.2rem; }
 
 h2 { font-size: 3rem; }
 
@@ -5072,7 +5072,7 @@ h6 { font-size: 1.4rem; }
 
 @media screen and (max-width: 375px) { body[class*="occasions-page"] .hero-image { height: 40rem; } }
 
-.page-title { color: #fff; font-family: "Vollkorn", serif; font-size: 4.2rem; font-weight: bold; line-height: 5rem; margin-bottom: 2rem; text-align: center; }
+.page-title { color: #fff; font-family: "Vollkorn", serif; font-size: 4.2rem; font-weight: 600; line-height: 5rem; margin-bottom: 2rem; text-align: center; }
 
 .subtitle { color: #fff; font-size: 2rem; line-height: 3rem; margin: auto; max-width: 76rem; text-align: center; }
 
@@ -5737,8 +5737,6 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .event-info-section:not(.has-image) .subtitle { color: #1f2d3d; }
 
-.event-info-section:not(.has-image) .event-persons-list { color: #1f2d3d; }
-
 .event-info-section:not(.has-image) .event-persons-list a { color: #666; }
 
 .event-info-section:not(.has-image) .event-persons-list a:hover { color: #1f2d3d; }
@@ -5749,9 +5747,9 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 992px) { .event-info-section .subtitle { padding-bottom: 0; } }
 
-.event-info-section .event-persons-list { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; font-size: 1.6rem; font-weight: bold; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 1rem; }
+.event-info-section .event-persons-list { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; font-weight: bold; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 1rem; }
 
-.event-info-section .event-persons-list ul { font-weight: normal; list-style: none; margin: 1rem 0 0; padding: 0; }
+.event-info-section .event-persons-list ul { font-weight: normal; list-style: none; padding: 0; }
 
 @media screen and (max-width: 992px) { .event-info-section .event-persons-list ul { margin: 1rem 0 0; padding: 0; } }
 
