@@ -6,6 +6,10 @@
 	line-height: 5rem;
 	margin-bottom: 2rem;
 	text-align: center;
+	h1 {
+		line-height: 5rem;
+		max-width: 100%;
+	}
 }
 .subtitle {
 	color: #fff;
@@ -84,3 +88,38 @@ body.tax-ocassions #preloader {
 		color: darken($red, 7%);
 	}
 }
+
+
+
+
+.error404 {
+	nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-scrolled {
+		display: block !important;
+		opacity: 1;
+		height: auto;
+		margin-top: 1.4rem;
+		@media screen and (max-width: 992px) {
+			margin-top: .7rem;
+		}
+	}
+	nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-display {display: none !important;}
+
+	.navbar.white {
+		background: #fff !important;
+		border-bottom: 1px solid #e6e6e6 !important;
+		#navbar-menu li a {
+			color: #999;
+			font-size: 1.4rem;
+			&:hover {color: #343f4b !important;}
+		}
+	}//.navbar.white
+
+	.navbar-transparent.white .login .dropdown-toggle {color: #999;}
+	nav.navbar-transparent.bootsnav .login:before {
+		border-left-color: #999;
+	}
+	.navbar-transparent.white .login .fa {
+		color: #c1c1c1;
+	}
+
+}//.error404

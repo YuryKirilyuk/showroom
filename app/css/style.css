@@ -5074,6 +5074,8 @@ h6 { font-size: 1.4rem; }
 
 .page-title { color: #fff; font-family: "Vollkorn", serif; font-size: 4.2rem; font-weight: 600; line-height: 5rem; margin-bottom: 2rem; text-align: center; }
 
+.page-title h1 { line-height: 5rem; max-width: 100%; }
+
 .subtitle { color: #fff; font-size: 2rem; line-height: 3rem; margin: auto; max-width: 76rem; text-align: center; }
 
 h2.section-title { color: #1f2d3d; font-family: "Vollkorn", serif; font-size: 3rem; font-weight: 600; line-height: normal; margin: 0 auto 2rem; max-width: 80rem; text-align: center; }
@@ -5103,6 +5105,24 @@ body[class*="occasions-page"] #preloader, body.tax-ocassions #preloader { displa
 .page-text a { color: #dc304b; }
 
 .page-text a:hover { color: #c7223c; }
+
+.error404 nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-scrolled { display: block !important; opacity: 1; height: auto; margin-top: 1.4rem; }
+
+@media screen and (max-width: 992px) { .error404 nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-scrolled { margin-top: .7rem; } }
+
+.error404 nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-display { display: none !important; }
+
+.error404 .navbar.white { background: #fff !important; border-bottom: 1px solid #e6e6e6 !important; }
+
+.error404 .navbar.white #navbar-menu li a { color: #999; font-size: 1.4rem; }
+
+.error404 .navbar.white #navbar-menu li a:hover { color: #343f4b !important; }
+
+.error404 .navbar-transparent.white .login .dropdown-toggle { color: #999; }
+
+.error404 nav.navbar-transparent.bootsnav .login:before { border-left-color: #999; }
+
+.error404 .navbar-transparent.white .login .fa { color: #c1c1c1; }
 
 footer { background: #384150; color: #a4acb8; font-weight: 600; padding-top: 7.5rem; min-width: 320px; }
 
@@ -5681,6 +5701,8 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 .text-section { padding: 2.3rem 0 5rem; text-align: center; }
 
+.text-section .section-wrapper { max-width: 80rem; margin: auto; }
+
 .text-section .section-content { max-width: 80rem; margin: auto; }
 
 .community-section { padding: 2.3rem 0 11rem; }
@@ -5769,7 +5791,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
 
 @media screen and (max-width: 425px) { .event-items-section { padding-left: 0; padding-right: 0; } }
 
-.event-items-section .grid { opacity: 0; margin: auto; }
+.event-items-section .grid { opacity: 0; margin: 0 auto; }
 
 @media screen and (max-width: 425px) { .event-items-section .grid { width: 100%; } }
 
@@ -5800,7 +5822,7 @@ textarea[class*="form-control"] { color: #1f2d3d; font-weight: 600; }
     }//&[style*="left: 0"]
 */ }
 
-.event-items-section .grid-item.visible { opacity: 1; -webkit-transition: opacity .5s 1s; transition: opacity .5s 1s; }
+.event-items-section .grid-item.visible { opacity: 1; -webkit-transition: opacity .5s 1s; transition: opacity .5s 1s; visibility: visible; }
 
 .event-items-section .grid-item:hover { background: rgba(0, 0, 0, 0.06); }
 
