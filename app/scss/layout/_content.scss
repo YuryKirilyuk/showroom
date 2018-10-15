@@ -74,9 +74,10 @@ p {
 .hero-image {
 	align-items: center;
 	background-color: #000;
-	background-position: center;
+	background-position: center top;
+	background-repeat: no-repeat;
 	background-size: cover;
-	background: none;
+	//background: none;
 	height: 38rem;
 	justify-content: flex-start;
 	display: flex;
